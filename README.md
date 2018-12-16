@@ -71,4 +71,4 @@ You can directly edit any chapter by opening it and clicking the "Edit" button i
   - [Redux Saga](content/redux-saga/index.md)
   - [Next.js](content/nextjs/index.md)
   - [Gatsby](content/gatsby/index.md)
-- Wrapping up
+- [Wrapping up](content/book-wrap-up/index.md)
