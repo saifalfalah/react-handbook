@@ -1,14 +1,11 @@
 ---
-title: Getting started with Next.js
-date: 2018-03-23T07:07:09+02:00
-updated: 2018-04-09T18:07:09+02:00
+title: Next.js
 description: "Next.js is a very popular Node.js framework which enables an easy server-side React rendering, and provides many other amazing features"
-tags: react
 ---
 
 ![Getting started with Next.js](banner.png)
 
-Working on a modern [JavaScript](/javascript/) application powered by [React](/react/) is awesome until you realize that there are a couple problems related to rendering all the content on the client-side.
+Working on a modern [JavaScript](https://flaviocopes.com/javascript/) application powered by [React](https://flaviocopes.com/react/) is awesome until you realize that there are a couple problems related to rendering all the content on the client-side.
 
 First, the page takes longer to the become visible to the user, because before the content loads, all the JavaScript must load, and your application needs to run to determine what to show on the page.
 
@@ -38,13 +35,13 @@ Here is a non-exhaustive list of the main Next.js features:
 
 Next.js supports all the major platforms: Linux, macOS, Windows.
 
-A Next.js project is started easily with [npm](/npm/):
+A Next.js project is started easily with [npm](https://flaviocopes.com/npm/):
 
 ```sh
 npm install next react react-dom
 ```
 
-or with [Yarn](/yarn/):
+or with [Yarn](https://flaviocopes.com/yarn/):
 
 ```sh
 yarn add next react react-dom
@@ -149,7 +146,7 @@ export default () => (
 
 Now go back to the browser and try this link. As you can see, the Contact page loads immediately, without a page refresh.
 
-This is client-side navigation working correctly, with complete support for the [**History API**](/history-api/), which means your users back button won't break.
+This is client-side navigation working correctly, with complete support for the [**History API**](https://flaviocopes.com/history-api/), which means your users back button won't break.
 
 If you now `cmd-click` the link, and the same Contact page will open in a new tab, now server rendered.
 
@@ -229,7 +226,7 @@ export default () => (
 
 ## CSS-in-JS
 
-Next.js by default provides support for [styled-jsx](https://github.com/zeit/styled-jsx), which is a CSS-in-JS solution provided by the same development team, but you can use whatever library you prefer, like [Styled Components](/styled-components/).
+Next.js by default provides support for [styled-jsx](https://github.com/zeit/styled-jsx), which is a CSS-in-JS solution provided by the same development team, but you can use whatever library you prefer, like [Styled Components](https://flaviocopes.com/styled-components/).
 
 Example:
 
@@ -279,7 +276,7 @@ export default () => (
 
 ## Exporting a static site
 
-A Next.js application can be easily exported as a static site, which can be deployed on one of the super fast static site hosts, like [Netlify](/netlify/) or [Firebase Hosting](/firebase-hosting/), without the need to set up a Node environment.
+A Next.js application can be easily exported as a static site, which can be deployed on one of the super fast static site hosts, like [Netlify](https://flaviocopes.com/netlify/) or [Firebase Hosting](https://flaviocopes.com/firebase-hosting/), without the need to set up a Node environment.
 
 The process requires you to declare the URLs that compose the site, but it's [a straightforward process](https://github.com/zeit/next.js/#static-html-export).
 

@@ -1,8 +1,6 @@
 ---
 title: Styled Components
-date: 2018-02-08T10:04:59+02:00
 description: "Styled Components are one of the new ways to use CSS in modern JavaScript. It is the meant to be a successor of CSS Modules, a way to write CSS that's scoped to a single component, and not leak to any other element in the page"
-tags: react
 ---
 
 ## A brief history
@@ -11,9 +9,9 @@ Once upon a time, the Web was really simple and CSS didn't even exist. We laid o
 
 Then **CSS** came to life, and after some time it became clear that frameworks could greatly help especially in building grids and layouts, Bootstrap and Foundation playing a big part of this.
 
-Preprocessors like **SASS** and others helped a lot to slow down the  frameworks adoption, and to better organize the code conventions like **BEM** and **SMACSS** grew in their usage, especially within teams.
+Preprocessors like **SASS** and others helped a lot to slow down the frameworks adoption, and to better organize the code conventions like **BEM** and **SMACSS** grew in their usage, especially within teams.
 
-Conventions are not a solution to everything, and they are complex to remember, so in the last few years with the increasing adoption of [JavaScript](/javascript/) and build processes in every frontend project, CSS got its way into JavaScript (**CSS-in-JS**).
+Conventions are not a solution to everything, and they are complex to remember, so in the last few years with the increasing adoption of [JavaScript](https://flaviocopes.com/javascript/) and build processes in every frontend project, CSS got its way into JavaScript (**CSS-in-JS**).
 
 New tools explored new ways of doing CSS-in-JS and a few succeeded with increasing popularity:
 
@@ -35,7 +33,7 @@ Styled Components allow you to write plain CSS in your components without worryi
 
 ## Installation
 
-Simply install styled-components using [npm](/npm/) or [yarn](/yarn/):
+Simply install styled-components using [npm](https://flaviocopes.com/npm/) or [yarn](https://flaviocopes.com/yarn/):
 
 ```sh
 npm install styled-components
@@ -45,7 +43,7 @@ yarn add styled-components
 That's it! Now all you have to do is to add this import:
 
 ```js
-import styled from "styled-components";
+import styled from 'styled-components'
 ```
 
 ## Your first styled component
@@ -57,19 +55,17 @@ const Button = styled.button`
   font-size: 1.5em;
   background-color: black;
   color: white;
-`;
+`
 ```
 
-`Button` is now a [React](/react/) Component in all its greatness.
+`Button` is now a [React](https://flaviocopes.com/react/) Component in all its greatness.
 
-We created it using a function of the styled object, called `button` in this case, and passing some CSS properties in a [template literal](/ecmascript/#template-literals).
+We created it using a function of the styled object, called `button` in this case, and passing some CSS properties in a [template literal](https://flaviocopes.com/ecmascript/#template-literals).
 
 Now this component can be rendered in our container using the normal React syntax:
 
 ```js
-render(
-  <Button />
-)
+render(<Button />)
 ```
 
 Styled Components offer other functions you can use to create other components, not just `button`, like `section`, `h1`, `input` and many others.
@@ -78,31 +74,31 @@ The syntax used, with the backtick, might be weird at first, but it's called [Ta
 
 ## Using props to customize components
 
-When you pass some props to a Styled Component, it will pass them down to the [DOM](/dom/) node mounted.
+When you pass some props to a Styled Component, it will pass them down to the [DOM](https://flaviocopes.com/dom/) node mounted.
 
 For example here's how we pass the `placeholder` and `type` props to an `input` component:
 
 ```js
 const Input = styled.input`
   //...
-`;
+`
 
 render(
   <div>
     <Input placeholder="..." type="text" />
   </div>
-);
+)
 ```
 
 This will do just what you think, inserting those props as HTML attributes.
 
-Props instead of just being blindly passed down to the [DOM](/dom/) can also be used to customize a component based on the prop value. Here's an example:
+Props instead of just being blindly passed down to the [DOM](https://flaviocopes.com/dom/) can also be used to customize a component based on the prop value. Here's an example:
 
 ```js
 const Button = styled.button`
-  background: ${props => props.primary ? 'black' : 'white'};
-  color: ${props => props.primary ? 'white' : 'black'};
-`;
+  background: ${props => (props.primary ? 'black' : 'white')};
+  color: ${props => (props.primary ? 'white' : 'black')};
+`
 
 render(
   <div>
@@ -110,7 +106,7 @@ render(
     <Button>A normal button</Button>
     <Button primary>The primary button</Button>
   </div>
-);
+)
 ```
 
 Setting the `primary` prop changes the color of the button.
@@ -123,18 +119,18 @@ If you have one component and you want to create a similar one, just styled slig
 const Button = styled.button`
   color: black;
   //...
-`;
+`
 
 const WhiteButton = Button.extend`
   color: white;
-`;
+`
 
 render(
   <div>
     <Button>A black button, like all buttons</Button>
     <WhiteButton>A white button</WhiteButton>
   </div>
-);
+)
 ```
 
 ## It's Regular CSS

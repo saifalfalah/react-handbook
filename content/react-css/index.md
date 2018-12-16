@@ -1,8 +1,6 @@
 ---
-title: "CSS in React"
-date: 2018-12-25T07:00:00+02:00
-description: "How to use CSS to style a React application"
-tags: react
+title: 'CSS in React'
+description: 'How to use CSS to style a React application'
 ---
 
 Using React you have various ways to add styling to your components.
@@ -13,13 +11,13 @@ The first and most simple is to use classes, and use a normal CSS file to target
 
 ```js
 const Button = () => {
-	return <button className="button">A button</button>
+  return <button className="button">A button</button>
 }
 ```
 
 ```css
 .button {
-   background-color: yellow;
+  background-color: yellow;
 }
 ```
 
@@ -29,7 +27,7 @@ You can import the stylesheet using an import statement, like this:
 import './style.css'
 ```
 
-and [Webpack](/webpack/) will take care of adding the CSS property to the bundle.
+and [Webpack](https://flaviocopes.com/webpack/) will take care of adding the CSS property to the bundle.
 
 ## Using the style attribute
 
@@ -57,6 +55,7 @@ Also, the style now is camelCased instead of using dashes. Every time a CSS prop
 Styles have the benefit of being local to the component, and they cannot leak to other components in other parts of the app, something that using classes and an external CSS file can't provide.
 
 ## Using CSS Modules
+
 **CSS Modules** seem to be a perfect spot in the middle: you use classes, but CSS is scoped to the component, which means that any styling you add cannot be applied to other components without your permission. And yet your styles are defined in a separate CSS file, which is easier to maintain than CSS in JavaScript (and you can use your good old CSS property names).
 
 Start by creating a CSS file that ends with `.module.css`, for example `Button.module.css`. A great choice is to name it as the component you are going to style

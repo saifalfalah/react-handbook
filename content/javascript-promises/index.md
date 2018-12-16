@@ -1,14 +1,7 @@
 ---
-title: Understanding JavaScript Promises
-date: 2018-02-09T10:07:09+02:00
-updated: 2018-07-20T10:07:09+02:00
-description: "Promises are one way to deal with asynchronous code in JavaScript, without writing too many callbacks in your code."
-booktitle: "Promises"
-tags: js
-tags_weight: 20
+title: JavaScript Promises
+description: 'Promises are one way to deal with asynchronous code in JavaScript, without writing too many callbacks in your code.'
 ---
-
-## Introduction to promises
 
 A promise is commonly defined as **a proxy for a value that will eventually become available**.
 
@@ -43,17 +36,15 @@ The Promise API exposes a Promise constructor, which you initialize using `new P
 ```js
 let done = true
 
-const isItDoneYet = new Promise(
-  (resolve, reject) => {
-    if (done) {
-      const workDone = 'Here is the thing I built'
-      resolve(workDone)
-    } else {
-      const why = 'Still working on something else'
-      reject(why)
-    }
+const isItDoneYet = new Promise((resolve, reject) => {
+  if (done) {
+    const workDone = 'Here is the thing I built'
+    resolve(workDone)
+  } else {
+    const why = 'Still working on something else'
+    reject(why)
   }
-)
+})
 ```
 
 As you can see the promise checks the `done` global constant, and if that's true, we return a resolved promise, otherwise a rejected promise.
@@ -69,16 +60,15 @@ In the last section, we introduced how a promise is created.
 Now let's see how the promise can be _consumed_ or used.
 
 ```js
-const isItDoneYet = new Promise(
-  //...
-)
+const isItDoneYet = new Promise()
+//...
 
 const checkIfItsDone = () => {
   isItDoneYet
-    .then((ok) => {
+    .then(ok => {
       console.log(ok)
     })
-    .catch((err) => {
+    .catch(err => {
       console.error(err)
     })
 }
@@ -99,20 +89,24 @@ The Fetch API is a promise-based mechanism, and calling `fetch()` is equivalent 
 ### Example of chaining promises
 
 ```js
-const status = (response) => {
+const status = response => {
   if (response.status >= 200 && response.status < 300) {
     return Promise.resolve(response)
   }
   return Promise.reject(new Error(response.statusText))
 }
 
-const json = (response) => response.json()
+const json = response => response.json()
 
 fetch('/todos.json')
   .then(status)
   .then(json)
-  .then((data) => { console.log('Request succeeded with JSON response', data) })
-  .catch((error) => { console.log('Request failed', error) })
+  .then(data => {
+    console.log('Request succeeded with JSON response', data)
+  })
+  .catch(error => {
+    console.log('Request failed', error)
+  })
 ```
 
 In this example, we call `fetch()` to get a list of TODO items from the `todos.json` file found in the domain root, and we create a chain of promises.
@@ -151,15 +145,17 @@ When anything in the chain of promises fails and raises an error or rejects the 
 ```js
 new Promise((resolve, reject) => {
   throw new Error('Error')
+}).catch(err => {
+  console.error(err)
 })
-  .catch((err) => { console.error(err) })
 
 // or
 
 new Promise((resolve, reject) => {
   reject('Error')
+}).catch(err => {
+  console.error(err)
 })
-  .catch((err) => { console.error(err) })
 ```
 
 ### Cascading errors
@@ -170,8 +166,12 @@ If inside the `catch()` you raise an error, you can append a second `catch()` to
 new Promise((resolve, reject) => {
   throw new Error('Error')
 })
-  .catch((err) => { throw new Error('Error') })
-  .catch((err) => { console.error(err) })
+  .catch(err => {
+    throw new Error('Error')
+  })
+  .catch(err => {
+    console.error(err)
+  })
 ```
 
 ---
@@ -188,19 +188,20 @@ Example:
 const f1 = fetch('/something.json')
 const f2 = fetch('/something2.json')
 
-Promise.all([f1, f2]).then((res) => {
+Promise.all([f1, f2])
+  .then(res => {
     console.log('Array of results', res)
-})
-.catch((err) => {
-  console.error(err)
-})
+  })
+  .catch(err => {
+    console.error(err)
+  })
 ```
 
 The [ES2015 destructuring assignment](https://flaviocopes.com/ecmascript/#destructuring-assignments) syntax allows you to also do
 
 ```js
 Promise.all([f1, f2]).then(([res1, res2]) => {
-    console.log('Results', res1, res2)
+  console.log('Results', res1, res2)
 })
 ```
 
@@ -208,19 +209,19 @@ You are not limited to using `fetch` of course, **any promise is good to go**.
 
 ### `Promise.race()`
 
-`Promise.race()` runs when the first of the promises you pass to it resolves, and it runs the attached callback just once, with the result of the  first promise resolved.
+`Promise.race()` runs when the first of the promises you pass to it resolves, and it runs the attached callback just once, with the result of the first promise resolved.
 
 Example:
 
 ```js
 const first = new Promise((resolve, reject) => {
-    setTimeout(resolve, 500, 'first')
+  setTimeout(resolve, 500, 'first')
 })
 const second = new Promise((resolve, reject) => {
-    setTimeout(resolve, 100, 'second')
+  setTimeout(resolve, 100, 'second')
 })
 
-Promise.race([first, second]).then((result) => {
+Promise.race([first, second]).then(result => {
   console.log(result) // second
 })
 ```

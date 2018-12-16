@@ -1,8 +1,6 @@
 ---
-title: "Props vs State in React"
-date: 2018-11-08T07:00:00+02:00
+title: 'Props vs State in React'
 description: "What's the difference between state and props in React?"
-tags: react
 ---
 
 In a React component, **props** are variables passed to it by its parent component.
@@ -35,7 +33,7 @@ class ChildComponent extends React.Component {
 
 and any other method in this class can reference the props using `this.props`.
 
- Props can be used to set the internal state based on a prop value in the constructor, like this:
+Props can be used to set the internal state based on a prop value in the constructor, like this:
 
 ```js
 class ChildComponent extends React.Component {

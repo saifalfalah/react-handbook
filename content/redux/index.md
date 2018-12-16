@@ -1,25 +1,17 @@
 ---
-title: "Learn how to use Redux"
-seotitle: "Redux Tutorial: a guide for beginners"
-date: 2018-01-28T09:06:15+02:00
-updated: 2018-05-13T09:06:15+02:00
+title: 'Redux'
 description: "Redux is a state manager that's usually used along with React, but it's not tied to that library. Learn Redux by reading this simple and easy to follow guide"
-booktitle: "Redux"
-bookdescription: " "
-medium: true
-tags: react
-
 ---
 
 ## Why you need Redux
 
 Redux is a state manager that's usually used along with React, but it's not tied to that library - it can be used with other technologies as well, but we'll stick to React for the sake of the explanation.
 
-React has its own way to manage state, as you can read on the [React Beginner's Guide](/react/), where I introduce how you can manage State in React.
+React has its own way to manage state, as you can read on the [React Beginner's Guide](https://flaviocopes.com/react/), where I introduce how you can manage State in React.
 
 Moving the state up in the tree works in simple cases, but in a complex app you might find you moving almost all the state up, and then down using props.
 
-React in version 16.3.0 introduced the [**Context API**](/react/#the-context-api), which makes Redux redundant for the use case of accessing the state from different parts of your app, so consider using the Context API instead of Redux, unless you need a specific feature that Redux provides.
+React in version 16.3.0 introduced the [**Context API**](https://flaviocopes.com/react/#the-context-api), which makes Redux redundant for the use case of accessing the state from different parts of your app, so consider using the Context API instead of Redux, unless you need a specific feature that Redux provides.
 
 Redux is a way to manage an application state, and move it to an **external global store**.
 
@@ -35,7 +27,7 @@ Simple apps should not need it at all (and there's nothing wrong with simple app
 
 ## Immutable State Tree
 
-In Redux, the whole state of the application is represented by **one** [JavaScript](/javascript/) object, called **State** or **State Tree**.
+In Redux, the whole state of the application is represented by **one** [JavaScript](https://flaviocopes.com/javascript/) object, called **State** or **State Tree**.
 
 We call it **Immutable State Tree** because it is read only: it can't be changed directly.
 
@@ -113,7 +105,7 @@ This is the job of **reducers**.
 A **reducer** is a **pure function** that calculates the next State Tree based on the previous State Tree, and the action dispatched.
 
 ```js
-(currentState, action) => newState
+;(currentState, action) => newState
 ```
 
 A pure function takes an input and returns an output without changing the input nor anything else. Thus, a reducer returns a completely new state tree object that substitutes the previous one.
@@ -189,7 +181,7 @@ const list = (state = [], action) => {
 const listManager = (state = {}, action) => {
   return {
     title: title(state.title, action),
-    list: list(state.list, action),
+    list: list(state.list, action)
   }
 }
 ```

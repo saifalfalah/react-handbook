@@ -1,21 +1,19 @@
 ---
 title: "Introduction to Gatsby"
-date: 2018-11-28T07:00:00+02:00
 description: "Gatsby is a platform for building apps and websites using React"
-tags: react
 ---
 
 ![Gatsby](banner.png)
 
 Gatsby is a platform for building apps and websites using React.
 
-It is one of the tools that allow you to build on a set of technologies and practices collectively known as [JAMstack](/jamstack/).
+It is one of the tools that allow you to build on a set of technologies and practices collectively known as [JAMstack](https://flaviocopes.com/jamstack/).
 
 Gatsby is one of the cool kids in the Frontend Development space right now. Why? I think the reasons are this:
 
 - the explosion of the JAMstack approach to building Web Apps and Web Sites
-- the rapid adoption of the [Progressive Web Apps](/progressive-web-apps/) technology in the industry, which is one of the key features of Gatsby
-- it's built in [React](/react/) and [GraphQL](/graphql/), which are two very popular and rising technologies
+- the rapid adoption of the [Progressive Web Apps](https://flaviocopes.com/progressive-web-apps/) technology in the industry, which is one of the key features of Gatsby
+- it's built in [React](https://flaviocopes.com/react/) and [GraphQL](https://flaviocopes.com/graphql/), which are two very popular and rising technologies
 - it's really powerful
 - it's fast
 - the documentation is great
@@ -31,7 +29,7 @@ With Gatsby, your applications are built using React components.
 
 The content you'll render in a site is generally written using Markdown, but you can use any kind of data source, like an headless CMS or a web service like Contentful.
 
-Gatsby builds the site, and it's compiled to static HTML which can be deployed on any Web Server you want, like [Netlify](/netlify/), AWS S3, GitHub Pages, regular hosting providers, PAAS and more. All you need is a place that serves plain HTTP pages and your assets to the client.
+Gatsby builds the site, and it's compiled to static HTML which can be deployed on any Web Server you want, like [Netlify](https://flaviocopes.com/netlify/), AWS S3, GitHub Pages, regular hosting providers, PAAS and more. All you need is a place that serves plain HTTP pages and your assets to the client.
 
 I mentioned Progressive Web Apps in the list. Gatsby automatically generates your site as a PWA, with a service worker that speeds up page loading and resource caching.
 
@@ -39,7 +37,7 @@ You can enhance the functionality of Gatsby via plugins.
 
 ## Installation
 
-You can install Gatsby by simply running this in your [terminal](/macos-terminal/):
+You can install Gatsby by simply running this in your [terminal](https://flaviocopes.com/macos-terminal/):
 
 ```sh
 npm install -g gatsby-cli
@@ -82,7 +80,7 @@ And here is our Hello World starter in action:
 
 ## Inspecting the site
 
-If you open the site you created with your favorite code editor (I use [VS Code](/vscode/)), you'll find there are 3 folders:
+If you open the site you created with your favorite code editor (I use [VS Code](https://flaviocopes.com/vscode/)), you'll find there are 3 folders:
 
 - `.cache`, an hidden folder that contains the Gatsby internals, nothing you should change right now
 - `public`, which contains the resulting website once you build it
@@ -115,7 +113,7 @@ You can link those pages by importing a Gatsby-provided React component called `
 import { Link } from "gatsby"
 ```
 
-and using it in your component [JSX](/jsx/):
+and using it in your component [JSX](https://flaviocopes.com/jsx/):
 
 ```js
 <Link to="/second/">Second</Link>
@@ -151,7 +149,7 @@ There are 3 kind of plugins:
 Some commonly used plugins are:
 
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/) which allows to edit the `head` tag content
-- [gatsby-plugin-catch-links](https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/) which uses the [History API](/history-api/) to prevent the browser to reload the page when a link is clicked, loading the new content using AJAX instead
+- [gatsby-plugin-catch-links](https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/) which uses the [History API](https://flaviocopes.com/history-api/) to prevent the browser to reload the page when a link is clicked, loading the new content using AJAX instead
 
 A Gatsby plugin is installed in 2 steps. First you install it using `npm`, then you add it to the Gatsby configuration in `gatsby-config.js`.
 

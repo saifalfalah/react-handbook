@@ -1,15 +1,13 @@
 ---
-title: "What is a Single Page Application?"
-date: 2018-11-11T07:00:00+02:00
-description: "React Applications are also called Single Page Applications. What does this mean?"
-tags: js
+title: 'What is a Single Page Application?'
+description: 'React Applications are also called Single Page Applications. What does this mean?'
 ---
 
 In the past, when browsers were much less capable than today, and JavaScript performance was poor, every page was coming from a server. Every time you clicked something, a new request was made to the server and the browser subsequently loaded the new page.
 
 Only very innovative products worked differently, and experimented new approaches.
 
-Today, popularized by modern frontend JavaScript frameworks like React, an app is usually built as a single page application: you only load the application code (HTML, [CSS](/css/), [JavaScript](/javascript/)) once, and when you interact with the application, what generally happens is that JavaScript intercepts the browser events and instead of making a new request to the server that then returns a new document, the client requests some JSON or performs an action on the server but the page that the user sees is never completely wiped away, and behaves more like a desktop application.
+Today, popularized by modern frontend JavaScript frameworks like React, an app is usually built as a single page application: you only load the application code (HTML, [CSS](https://flaviocopes.com/css/), [JavaScript](https://flaviocopes.com/javascript/)) once, and when you interact with the application, what generally happens is that JavaScript intercepts the browser events and instead of making a new request to the server that then returns a new document, the client requests some JSON or performs an action on the server but the page that the user sees is never completely wiped away, and behaves more like a desktop application.
 
 Single page applications are built in JavaScript (or at least compiled to JavaScript) and work in the browser.
 
@@ -49,7 +47,7 @@ As a con, Single Page Apps rely heavily on JavaScript. This might make using an 
 
 Since you get rid of the default browser navigation, URLs must be managed manually.
 
-This part of an application is called router. Some frameworks already take care of them for you (like Ember), other require libraries that will do this job (like [React Router](/react-router/)).
+This part of an application is called router. Some frameworks already take care of them for you (like Ember), other require libraries that will do this job (like [React Router](https://flaviocopes.com/react-router/)).
 
 What's the problem? In the beginning, this was an afterthought for developers building Single Page Applications. This caused the common "broken back button" issue: when navigating inside the applicationthe URL didn't change (since the browser default navigation was hijacked) and hitting the back button, a common operation that users do to go to the previous screen, might move to a website you visited a long time ago.
 

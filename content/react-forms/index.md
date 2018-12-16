@@ -1,8 +1,6 @@
 ---
-title: "Handling Forms in React"
-date: 2018-12-27T07:00:00+02:00
-description: "How to handle forms in a React application"
-tags: react
+title: 'Handling Forms in React'
+description: 'How to handle forms in a React application'
 ---
 
 ![Handling Forms in React](banner.jpg)
@@ -37,14 +35,17 @@ class Form extends React.Component {
     this.state = { username: '' }
   }
 
-  handleChange(event) {
-  }
+  handleChange(event) {}
 
   render() {
     return (
       <form>
-			Username:
-         <input type="text" value={this.state.username} onChange={this.handleChange} />
+        Username:
+        <input
+          type="text"
+          value={this.state.username}
+          onChange={this.handleChange}
+        />
       </form>
     )
   }
@@ -62,13 +63,17 @@ class Form extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value})
+    this.setState({ value: event.target.value })
   }
 
   render() {
     return (
       <form>
-         <input type="text" value={this.state.username} onChange={this.handleChange} />
+        <input
+          type="text"
+          value={this.state.username}
+          onChange={this.handleChange}
+        />
       </form>
     )
   }
@@ -87,7 +92,7 @@ class Form extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value})
+    this.setState({ value: event.target.value })
   }
 
   handleSubmit(event) {
@@ -98,7 +103,11 @@ class Form extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input type="text" value={this.state.username} onChange={this.handleChange} />
+        <input
+          type="text"
+          value={this.state.username}
+          onChange={this.handleChange}
+        />
         <input type="submit" value="Submit" />
       </form>
     )
@@ -116,10 +125,10 @@ Here's a `textarea`, for example:
 <textarea value={this.state.address} onChange={this.handleChange} />
 ```
 
-The same  goes for the `select` tag:
+The same goes for the `select` tag:
 
 ```html
-<select value={this.state.age} onChange={this.handleChange}>
+<select value="{this.state.age}" onChange="{this.handleChange}">
   <option value="teen">Less than 18</option>
   <option value="adult">18+</option>
 </select>
@@ -134,7 +143,7 @@ class FileInput extends React.Component {
   constructor(props) {
     super(props)
     this.curriculum = React.createRef()
-	  this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleSubmit(event) {

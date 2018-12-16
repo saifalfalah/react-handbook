@@ -1,20 +1,15 @@
 ---
 title: "Introduction to ES Modules"
-seotitle: "ES Modules, the JavaScript Module System"
-date: 2018-06-13T07:06:15+02:00
 description: "ES Modules is the ECMAScript standard for working with modules. While Node.js has been using the CommonJS standard since years, the browser never had a module system, as every major decision such as a module system must be first standardized by ECMAScript and then implemented"
-booktitle: ES Modules
-tags: js
-tags_weight: 37
 ---
 
 ![ES Modules](banner.jpg)
 
 ES Modules is the ECMAScript standard for working with modules.
 
-While [Node.js](/node/) has been using the CommonJS standard since years, the browser never had a module system, as every major decision such as a module system must be first standardized by ECMAScript and then implemented by the browser.
+While [Node.js](https://flaviocopes.com/node/) has been using the CommonJS standard since years, the browser never had a module system, as every major decision such as a module system must be first standardized by ECMAScript and then implemented by the browser.
 
-This standardization process completed with [ES6](/es6/) and browsers started implementing this standard trying to keep everything well aligned, working all in the same way, and now ES Modules are supported in Chrome, Safari, Edge and Firefox (since version 60).
+This standardization process completed with [ES6](https://flaviocopes.com/es6/) and browsers started implementing this standard trying to keep everything well aligned, working all in the same way, and now ES Modules are supported in Chrome, Safari, Edge and Firefox (since version 60).
 
 Modules are very cool, because they let you encapsulate all sorts of functionality, and expose this functionality to other JavaScript files, as libraries.
 
@@ -52,9 +47,9 @@ An HTML page can add a module by using a `<script>` tag with the special `type="
 <script type="module" src="index.js"></script>
 ```
 
-> Note: this module import behaves like a `defer` script load. See [efficiently load JavaScript with defer and async](/javascript-async-defer/)
+> Note: this module import behaves like a `defer` script load. See [efficiently load JavaScript with defer and async](https://flaviocopes.com/javascript-async-defer/)
 
-It's important to note that any script loaded with `type="module"` is loaded in [strict mode](/javascript-strict-mode/).
+It's important to note that any script loaded with `type="module"` is loaded in [strict mode](https://flaviocopes.com/javascript-strict-mode/).
 
 In this example, the `uppercase.js` module defines a **default export**, so when we import it, we can assign it a name we prefer:
 
@@ -114,7 +109,7 @@ Another module can import all those exports using
 import * from 'module'
 ```
 
-You can import just a few of those exports, using the [destructuring assignment](/es6/#destructuring-assignments):
+You can import just a few of those exports, using the [destructuring assignment](https://flaviocopes.com/es6/#destructuring-assignments):
 
 ```js
 import { a } from 'module'
@@ -137,7 +132,7 @@ You can check an ES Modules example on <https://glitch.com/edit/#!/flavio-es-mod
 
 ## CORS
 
-Modules are fetched using [CORS](/cors/). This means that if you reference scripts from other domains, they must have a valid CORS header that allows cross-site loading (like `Access-Control-Allow-Origin: *`)
+Modules are fetched using [CORS](https://flaviocopes.com/cors/). This means that if you reference scripts from other domains, they must have a valid CORS header that allows cross-site loading (like `Access-Control-Allow-Origin: *`)
 
 ## What about browsers that do not support modules?
 
@@ -154,4 +149,4 @@ ES Modules are one of the biggest features introduced in modern browsers. They a
 
 We can now use them! But we must also remember that having more than a few modules is going to have a performance hit on our pages, as it's one more step that the browser must perform at runtime.
 
-[Webpack](/webpack/) is probably going to still be a huge player even if ES Modules land in the browser, but having such a feature directly built in the language is huge for a unification of how modules work in the client-side and on Node.js as well.
+[Webpack](https://flaviocopes.com/webpack/) is probably going to still be a huge player even if ES Modules land in the browser, but having such a feature directly built in the language is huge for a unification of how modules work in the client-side and on Node.js as well.

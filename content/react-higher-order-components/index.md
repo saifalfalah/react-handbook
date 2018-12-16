@@ -1,8 +1,6 @@
 ---
-title: React Higher Order Components
-date: 2018-12-12T07:00:00+02:00
-description: "Find out what Higher Order Components are and how they are useful when programming a React application"
-tags: react
+title: Higher Order Components
+description: 'Find out what Higher Order Components are and how they are useful when programming a React application'
 ---
 
 You might be familiar with Higher Order Functions in JavaScript. Those are functions that accept functions as arguments, and/or return functions.
@@ -24,22 +22,20 @@ Let's create one.
 The simplest example ever of a HOC is one that simply returns the component unaltered:
 
 ```js
-const withButton = (Button) => () => <Button />
+const withButton = Button => () => <Button />
 ```
 
 Let's make this a little bit more useful and add a property to that button, in addition to all the props it already came with, the color:
 
 ```js
-const withButton = (Element) => (props) => <Button {...props} color="red" />
+const withButton = Element => props => <Button {...props} color="red" />
 ```
 
 We use this HOC in a component JSX:
 
 ```js
 const Button = () => {
-  return (
-    <button>test</button>
-  )
+  return <button>test</button>
 }
 
 const WrappedButton = withButton(Button)

@@ -1,8 +1,6 @@
 ---
-title: "React Components"
-date: 2018-10-26T07:00:00+02:00
-description: "A brief introduction to React Components"
-tags: react
+title: 'Components'
+description: 'A brief introduction to React Components'
 ---
 
 A component is one isolated piece of interface. For example in a typical blog homepage you might find the Sidebar component, and the Blog Posts List component. They are in turn composed by components themselves, so you could have a list of Blog post components, each for every blog post, and each with its own peculiar properties.
@@ -19,13 +17,10 @@ The next 2 lines are equivalent, they do the same thing. One with **JSX**, one w
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(
-  <h1>Hello World!</h1>,
-  document.getElementById('app')
-)
+ReactDOM.render(<h1>Hello World!</h1>, document.getElementById('app'))
 
 ReactDOM.render(
-  React.DOM.h1(null, "Hello World!"),
+  React.DOM.h1(null, 'Hello World!'),
   document.getElementById('app')
 )
 ```

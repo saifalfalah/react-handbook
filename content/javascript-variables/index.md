@@ -1,13 +1,7 @@
 ---
-title: "JavaScript Variables"
-date: 2018-02-15T16:04:59+02:00
-description: "A variable is a literal assigned to an identifier, so you can reference and use it later in the program. Learn how to declare one with JavaScript"
-booktitle: Variables
-tags: js
-tags_weight: 4
+title: 'Variables'
+description: 'A variable is a literal assigned to an identifier, so you can reference and use it later in the program. Learn how to declare one with JavaScript'
 ---
-
-## Introduction to JavaScript Variables
 
 A variable is a literal assigned to an identifier, so you can reference and use it later in the program.
 
@@ -18,7 +12,6 @@ This is why JavaScript is sometimes referenced as "untyped".
 A variable must be declared before you can use it. There are 3 ways to do it, using `var`, `let` or `const`, and those 3 ways differ in how you can interact with the variable later on.
 
 ## Using `var`
-
 
 Until ES2015, `var` was the only construct available for defining variables.
 
@@ -58,21 +51,19 @@ Any variable defined into a function with the same name of a global variable tak
 
 It's important to understand that a block (identified by a pair of curly braces) does not define a new scope. A new scope is only created when a function is created, because `var` has not block scope, but function scope.
 
-Inside a function, any variable defined in it is visible throughout all the function code, even if the variable is declared at the end of the function it can still be referenced in the beginning, because JavaScript before executing the code actually *moves all variables on top* (something that is called **hoisting**). To avoid confusion, always declare variables at the beginning of a function.
+Inside a function, any variable defined in it is visible throughout all the function code, even if the variable is declared at the end of the function it can still be referenced in the beginning, because JavaScript before executing the code actually _moves all variables on top_ (something that is called **hoisting**). To avoid confusion, always declare variables at the beginning of a function.
 
 ## Using `let`
-
 
 `let` is a new feature introduced in ES2015 and it's essentially a block scoped version of `var`. Its scope is limited to the block, statement or expression where it's defined, and all the contained inner blocks.
 
 Modern JavaScript developers might choose to only use `let` and completely discard the use of `var`.
 
-> If `let` seems an obscure term, just read `let color = 'red'` as *let the color be red* and all has much more sense
+> If `let` seems an obscure term, just read `let color = 'red'` as _let the color be red_ and all has much more sense
 
 Defining `let` outside of any function - contrary to `var` - does not create a global variable.
 
 ## Using `const`
-
 
 Variables declared with `var` or `let` can be changed later on in the program, and reassigned. A once a `const` is initialized, its value can never be changed again, and it can't be reassigned to a different value.
 

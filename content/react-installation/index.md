@@ -1,8 +1,6 @@
 ---
-title: "How to install React"
-date: 2018-12-19T07:00:00+02:00
-description: "How to install React on your development computer"
-tags: react
+title: 'How to install React'
+description: 'How to install React on your development computer'
 ---
 
 How do you install React?
@@ -19,12 +17,18 @@ In this case, you add 2 script tags to the end of the `body` tag:
 
 ```html
 <html>
-...
-<body>
   ...
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.7.0-alpha.2/umd/react.development.js" crossorigin></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.7.0-alpha.2/umd/react-dom.production.min.js" crossorigin></script>
-</body>
+  <body>
+    ...
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react/16.7.0-alpha.2/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.7.0-alpha.2/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+  </body>
 </html>
 ```
 
@@ -44,7 +48,7 @@ After those tags you can load your JavaScript files that use React, or even inli
 </script>
 ```
 
-To use [JSX](/jsx/) you need an extra step: load [Babel](/babel/)
+To use [JSX](https://flaviocopes.com/jsx/) you need an extra step: load [Babel](https://flaviocopes.com/babel/)
 
 ```html
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -60,17 +64,10 @@ Now you can add JSX in your app.js file:
 
 ```js
 const Button = () => {
-  return (
-    <button>
-      Click me!
-    </button>
-  )
+  return <button>Click me!</button>
 }
 
-ReactDOM.render(
-  <Button />,
-  document.getElementById('root')
-)
+ReactDOM.render(<Button />, document.getElementById('root'))
 ```
 
 Check out this simple Glitch example: <https://glitch.com/edit/#!/react-example-inline-jsx?path=script.js>
@@ -81,7 +78,7 @@ Starting in this way with script tags is good for building prototypes and have a
 
 `create-react-app` is a project aimed at getting you up to speed with React in no time, and any React app that is going to outgrow a single page is going to be use it.
 
-You start by using [`npx`](/npx/), which is an easy way to download and execute Node.js commands without installing them. `npx` comes with `npm` (since version 5.2) and if you don't have npm installed already, do it now from <https://nodejs.org> (npm is installed with Node).
+You start by using [`npx`](https://flaviocopes.com/npx/), which is an easy way to download and execute Node.js commands without installing them. `npx` comes with `npm` (since version 5.2) and if you don't have npm installed already, do it now from <https://nodejs.org> (npm is installed with Node).
 
 If you are unsure which version of npm you have, run `npm -v` to check if you need to update.
 
@@ -101,7 +98,7 @@ This is when it finished running:
 
 ![](create-react-app-finished.png)
 
-`create-react-app` created a files structure in the folder you told (`todolist` in this case), and initialized a [Git](/git/) repository.
+`create-react-app` created a files structure in the folder you told (`todolist` in this case), and initialized a [Git](https://flaviocopes.com/git/) repository.
 
 It also added a few commands in the `package.json` file, so you can immediately start the app by going into the folder and run `npm start`.
 
@@ -112,14 +109,14 @@ It also added a few commands in the `package.json` file, so you can immediately 
 In addition to `npm start`, `create-react-app` added a few other commands:
 
 - `npm run build`: to build the React application files in the `build` folder, ready to be deployed to a server
-- `npm test`: to run the testing suite using [Jest](/jest/)
+- `npm test`: to run the testing suite using [Jest](https://flaviocopes.com/jest/)
 - `npm eject`: to eject from `create-react-app`
 
 Ejecting is the act of deciding that `create-react-app` has done enough for you, but you want to do more than what it allows.
 
 Since `create-react-app` is a set of common denominator conventions and a limited amount of options, it's somewhat guaranteed that at some point your needs will require you something unique that outgrows the capabilities of `create-react-app`.
 
-When you eject, you lose the ability of automatic updates but you gain more flexibility in the [Babel](/babel/) and [Webpack](/webpack/) configuration.
+When you eject, you lose the ability of automatic updates but you gain more flexibility in the [Babel](https://flaviocopes.com/babel/) and [Webpack](https://flaviocopes.com/webpack/) configuration.
 
 When you eject the action is irreversible. You will get 2 new folders in your application directory, `config` and `scripts`. Those contain all the configuration you need and now you can start editing it.
 

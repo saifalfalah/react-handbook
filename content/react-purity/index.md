@@ -1,8 +1,6 @@
 ---
-title: "React Concept: Purity"
-date: 2018-12-16T07:00:00+02:00
-description: "What is purity, a pure function and a pure component"
-tags: react
+title: 'React Concept: Purity'
+description: 'What is purity, a pure function and a pure component'
 ---
 
 In JavaScript, when a function does not mutate objects but just returns a new object, it's called a pure function.
@@ -18,10 +16,8 @@ React applies this concept to components. A React component is a pure component 
 All functional components are pure components:
 
 ```js
-const Button = (props) => {
-  return (
-    <button>{props.message}</button>
-  )
+const Button = props => {
+  return <button>{props.message}</button>
 }
 ```
 
@@ -30,9 +26,7 @@ Class components can be pure if their output only depends on the props:
 ```js
 class Button extends React.Component {
   render() {
-    return (
-      <button>{this.props.message}</button>
-    )
+    return <button>{this.props.message}</button>
   }
 }
 ```

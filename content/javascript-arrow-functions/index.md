@@ -1,10 +1,6 @@
 ---
-title: A tutorial to JavaScript Arrow Functions
-description: "Arrow Functions are one of the most impactful changes in ES6/ES2015, and they are widely used nowadays. They slightly differ from regular functions. Find out how"
-date: 2018-04-29T07:04:59+02:00
-booktitle: "JavaScript Arrow Functions"
-tags: js
-tags_weight: 13
+title: Arrow Functions
+description: 'Arrow Functions are one of the most impactful changes in ES6/ES2015, and they are widely used nowadays. They slightly differ from regular functions. Find out how'
 ---
 
 Arrow functions were introduced in ES6 / ECMAScript 2015, and since their introduction they changed forever how JavaScript code looks (and works).
@@ -62,7 +58,7 @@ myFunction() //'test'
 Another example, returning an object (remember to wrap the curly brackets in parentheses to avoid it being considered the wrapping function body brackets):
 
 ```js
-const myFunction = () => ({value: 'test'})
+const myFunction = () => ({ value: 'test' })
 
 myFunction() //{value: 'test'}
 ```

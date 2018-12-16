@@ -1,8 +1,6 @@
 ---
-title: "React Lifecycle Events"
-date: 2018-12-14T07:00:00+02:00
-description: "Find out the React Lifecycle events and how you can use them"
-tags: react
+title: 'React Lifecycle Events'
+description: 'Find out the React Lifecycle events and how you can use them'
 ---
 
 React class components can have hooks for several lifecycle events.

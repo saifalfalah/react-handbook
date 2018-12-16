@@ -1,8 +1,6 @@
 ---
-title: "React Concept: Composition"
-date: 2018-12-20T07:00:00+02:00
-description: "What is composition and why is it a key concept in your React apps"
-tags: react
+title: 'React Concepts: Composition'
+description: 'What is composition and why is it a key concept in your React apps'
 ---
 
 In programming, composition allows you to build more complex functionality by combining small and focused functions.
@@ -23,22 +21,16 @@ You create small and lean components and use them to _compose_ more functionalit
 Use an outer component to expand and specialize a more generic component:
 
 ```js
-const Button = (props) => {
-  return (
-    <button>{props.text}</button>
-  )
+const Button = props => {
+  return <button>{props.text}</button>
 }
 
 const SubmitButton = () => {
-  return (
-    <Button text="Submit" />
-  )
+  return <Button text="Submit" />
 }
 
 const LoginButton = () => {
-  return (
-    <Button text="Login" />
-  )
+  return <Button text="Login" />
 }
 ```
 
@@ -47,16 +39,12 @@ const LoginButton = () => {
 A component can focus on tracking a click event, for example, and what actually happens when the click event happens is up to the container component:
 
 ```js
-const Button = (props) => {
-  return (
-    <button onClick={props.onClickHandler}>{props.text}</button>
-  )
+const Button = props => {
+  return <button onClick={props.onClickHandler}>{props.text}</button>
 }
 
-const LoginButton = (props) => {
-  return (
-    <Button text="Login" onClickHandler={props.onClickHandler} />
-  )
+const LoginButton = props => {
+  return <Button text="Login" onClickHandler={props.onClickHandler} />
 }
 
 const Container = () => {
@@ -64,9 +52,7 @@ const Container = () => {
     alert('clicked')
   }
 
-  return (
-    <LoginButton onClickHandler={onClickHandler} />
-  )
+  return <LoginButton onClickHandler={onClickHandler} />
 }
 ```
 
@@ -77,12 +63,8 @@ The `props.children` property allows you to inject components inside other compo
 The component needs to output `props.children` in its JSX:
 
 ```js
-const Sidebar = (props) => {
-  return (
-    <aside>
-      {props.children}
-    </aside>
-  )
+const Sidebar = props => {
+  return <aside>{props.children}</aside>
 }
 ```
 

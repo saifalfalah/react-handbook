@@ -1,11 +1,9 @@
 ---
-title: "Using SASS in React"
-date: 2018-12-26T07:00:00+02:00
-description: "How to use SASS to style a React application"
-tags: react
+title: 'Using SASS in React'
+description: 'How to use SASS to style a React application'
 ---
 
-When you build a React application using [`create-react-app`](/react-create-react-app/), you have many options at your disposal when it comes to styling.
+When you build a React application using [`create-react-app`](https://flaviocopes.com/react-create-react-app/), you have many options at your disposal when it comes to styling.
 
 > Of course, if not using `create-react-app`, you have all the choices in the world, but we limit the discussion to the `create-react-app`-provided options.
 

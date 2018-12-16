@@ -1,8 +1,6 @@
 ---
 title: Unidirectional Data Flow in React
 description: Working with React you might encounter the term Unidirectional Data Flow. What does it mean?
-date: 2018-12-09T07:00:00+02:00
-tags: react
 ---
 
 Unidirectional Data Flow is not a concept unique to React, but as a JavaScript developer this might be the first time you hear it.

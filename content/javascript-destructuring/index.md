@@ -1,8 +1,6 @@
 ---
 title: Destructuring Objects and Arrays in JavaScript
-description: "Learn how to use the destructuring syntax to work with arrays and objects in JavaScript"
-date: 2019-01-04T07:00:00+02:00
-tags: js
+description: 'Learn how to use the destructuring syntax to work with arrays and objects in JavaScript'
 ---
 
 Given an object, using the destructuring syntax you can extract just some values and put them into named variables:
@@ -12,10 +10,10 @@ const person = {
   firstName: 'Tom',
   lastName: 'Cruise',
   actor: true,
-  age: 54, //made up
+  age: 54 //made up
 }
 
-const {firstName: name, age} = person //name: Tom, age: 54
+const { firstName: name, age } = person //name: Tom, age: 54
 ```
 
 `name` and `age` contain the desired values.
@@ -23,7 +21,7 @@ const {firstName: name, age} = person //name: Tom, age: 54
 The syntax also works on arrays:
 
 ```js
-const a = [1,2,3,4,5]
+const a = [1, 2, 3, 4, 5]
 const [first, second] = a
 ```
 

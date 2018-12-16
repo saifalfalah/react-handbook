@@ -1,13 +1,11 @@
 ---
-title: "Introduction to React"
-date: 2018-10-25T07:00:00+02:00
-description: "An introduction to the React view library"
-tags: react
+title: 'Introduction to React'
+description: 'An introduction to the React view library'
 ---
 
 ## What is React?
 
-React is a [JavaScript](/javascript/) library that aims to simplify development of visual interfaces.
+React is a [JavaScript](https://flaviocopes.com/javascript/) library that aims to simplify development of visual interfaces.
 
 Developed at Facebook and released to the world in 2013, it drives some of the most widely used apps, powering Facebook and Instagram among countless other applications.
 

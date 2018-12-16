@@ -1,8 +1,6 @@
 ---
-title: "Server Side Rendering with React"
-date: 2018-12-23T07:00:00+02:00
-description: "What is Server Side Rendering? How to do it with React?"
-tags: react
+title: 'Server Side Rendering with React'
+description: 'What is Server Side Rendering? How to do it with React?'
 ---
 
 **Server Side Rendering**, also called **SSR**, is the ability of a JavaScript application to render on the server rather than in the browser.
@@ -48,7 +46,7 @@ You have a set of folders in your app directory. Create a new folder called `ser
 
 Following the `create-react-app` conventions, the app lives in the `src/App.js` file. We're going to load that component, and render it to a string using [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html), which is provided by `react-dom`.
 
-You get the contents of the `./build/index.html` file, and replace the `<div id="root"></div>` placeholder, which is the tag where the application hooks by default, with ``<div id="root">${ReactDOMServer.renderToString(<App />)}</div>`.
+You get the contents of the `./build/index.html` file, and replace the `<div id="root"></div>` placeholder, which is the tag where the application hooks by default, with ``<div id="root">\${ReactDOMServer.renderToString(<App />)}</div>`.
 
 All the content inside the `build` folder is going to be served as-is, statically by Express.
 

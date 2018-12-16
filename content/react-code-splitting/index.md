@@ -1,8 +1,6 @@
 ---
-title: "Code Splitting in React"
-date: 2018-12-22T07:00:00+02:00
-description: "What is Code Splitting and how to introduce it in a React app"
-tags: react
+title: 'Code Splitting'
+description: 'What is Code Splitting and how to introduce it in a React app'
 ---
 
 Modern JavaScript applications can be quite huge in terms of bundle size. You don't want your users to have to download a 1MB package of JavaScript (your code and the libraries you use) just to load the first page, right? But this is what happens by default when you ship a modern Web App built with Webpack bundling.
@@ -21,7 +19,7 @@ React 16.6.0, released in October 2018, introduced a way of performing code spli
 
 Use **React.lazy** and **Suspense**.
 
-`React.lazy`  and `Suspense` form the perfect way to lazily load a dependency and only show it when the needed.
+`React.lazy` and `Suspense` form the perfect way to lazily load a dependency and only show it when the needed.
 
 Let's start with `React.lazy`. You use it to import any component:
 
@@ -84,8 +82,8 @@ const App = () => (
   <Router>
     <React.Suspense fallback={<p>Please wait</p>}>
       <Switch>
-        <Route exact path="/" component={TodoList}/>
-        <Route path="/new" component={NewTodo}/>
+        <Route exact path="/" component={TodoList} />
+        <Route path="/new" component={NewTodo} />
       </Switch>
     </React.Suspense>
   </Router>

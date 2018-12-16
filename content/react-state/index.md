@@ -1,8 +1,6 @@
 ---
-title: "The React State"
-date: 2018-10-29T07:00:00+02:00
-description: "How to interact with the state of your components"
-tags: react
+title: 'The React State'
+description: 'How to interact with the state of your components'
 ---
 
 ### Setting the default state
@@ -68,7 +66,7 @@ The object can contain a subset, or a superset, of the state. Only the propertie
 
 #### Why you should always use `setState()`
 
-The reason is that using this method, React knows that the state has changed. It will then start the series of events that will lead to the Component being re-rendered, along with any [DOM](/dom/) update.
+The reason is that using this method, React knows that the state has changed. It will then start the series of events that will lead to the Component being re-rendered, along with any [DOM](https://flaviocopes.com/dom/) update.
 
 ### Unidirectional Data Flow
 
@@ -113,9 +111,8 @@ class Converter extends React.Component {
     this.state = { currency: '€' }
   }
 
-  handleChangeCurrency = (event) => {
-    this.setState({ currency: this.state.currency ===
-      '€' ? '$' : '€' })
+  handleChangeCurrency = event => {
+    this.setState({ currency: this.state.currency === '€' ? '$' : '€' })
   }
 
   render() {
@@ -124,13 +121,14 @@ class Converter extends React.Component {
         <Display currency={this.state.currency} />
         <CurrencySwitcher
           currency={this.state.currency}
-          handleChangeCurrency={this.handleChangeCurrency} />
+          handleChangeCurrency={this.handleChangeCurrency}
+        />
       </div>
     )
   }
 }
 
-const CurrencySwitcher = (props) => {
+const CurrencySwitcher = props => {
   return (
     <button onClick={props.handleChangeCurrency}>
       Current currency is {props.currency}. Change it!
@@ -138,10 +136,8 @@ const CurrencySwitcher = (props) => {
   )
 }
 
-const Display = (props) => {
-  return (
-    <p>Current currency is {props.currency}.</p>
-  )
+const Display = props => {
+  return <p>Current currency is {props.currency}.</p>
 }
 ```
 

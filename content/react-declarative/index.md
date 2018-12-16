@@ -1,8 +1,6 @@
 ---
-title: "React concepts: declarative"
-date: 2018-11-03T07:00:00+02:00
-description: "What does it mean when you read that React is declarative"
-tags: react
+title: 'React Concepts: Declarative'
+description: 'What does it mean when you read that React is declarative'
 ---
 
 You'll run across articles describing React as a **declarative approach to building UIs**.

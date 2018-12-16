@@ -1,8 +1,6 @@
 ---
-title: "React Concept: Immutability"
-date: 2018-12-15T07:00:00+02:00
-description: "What is immutability? And how does it fit in the React world?"
-tags: react
+title: 'React Concept: Immutability'
+description: 'What is immutability? And how does it fit in the React world?'
 ---
 
 One concept you will likely meet when programming in React is immutability (and its opposite, mutability).

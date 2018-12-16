@@ -1,8 +1,6 @@
 ---
 title: How to reference a DOM element in React
-date: 2018-12-08T07:00:00+02:00
-description: "Find out how to ref a DOM element in React"
-tags: react
+description: 'Find out how to ref a DOM element in React'
 ---
 
 React is great at abstracting away the DOM from you when building apps.
@@ -22,7 +20,7 @@ ref={el => this.someProperty = el}
 Put this into context, for example with a `button` element:
 
 ```js
-<button ref={el => this.button = el}></button>
+<button ref={el => (this.button = el)} />
 ```
 
 `button` refers to a property of the component, which can then be used by the component's lifecycle methods (or other methods) to interact with the DOM:
@@ -30,9 +28,7 @@ Put this into context, for example with a `button` element:
 ```js
 class SomeComponent extends Component {
   render() {
-    return (
-      <button ref={el => this.button = el}></button>
-    )
+    return <button ref={el => (this.button = el)} />
   }
 }
 ```
@@ -42,8 +38,6 @@ In a function component the mechanism is the same, you just avoid using `this` (
 ```js
 function SomeComponent() {
   let button
-  return (
-    <button ref={el => button = el}></button>
-  )
+  return <button ref={el => (button = el)} />
 }
 ```

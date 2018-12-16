@@ -1,8 +1,6 @@
 ---
-title: "React Events"
-date: 2018-10-28T07:00:00+02:00
-description: "Learn how to interact with events in a React application"
-tags: react
+title: 'React Events'
+description: 'Learn how to interact with events in a React application'
 ---
 
 React provides an easy way to manage events. Prepare to say goodbye to `addEventListener`.
@@ -10,7 +8,7 @@ React provides an easy way to manage events. Prepare to say goodbye to `addEvent
 In the previous article about the State you saw this example:
 
 ```js
-const CurrencySwitcher = (props) => {
+const CurrencySwitcher = props => {
   return (
     <button onClick={props.handleChangeCurrency}>
       Current currency is {props.currency}. Change it!
@@ -19,16 +17,14 @@ const CurrencySwitcher = (props) => {
 }
 ```
 
-If you've been using JavaScript for a while, this is just like plain old [JavaScript event handlers](/javascript-events/), except that this time you're defining everything in JavaScript, not in your HTML, and you're passing a function, not a string.
+If you've been using JavaScript for a while, this is just like plain old [JavaScript event handlers](https://flaviocopes.com/javascript-events/), except that this time you're defining everything in JavaScript, not in your HTML, and you're passing a function, not a string.
 
 The actual event names are a little bit different because in React you use camelCase for everything, so `onclick` becomes `onClick`, `onsubmit` becomes `onSubmit`.
 
 For reference, this is old school HTML with JavaScript events mixed in:
 
 ```html
-<button onclick="handleChangeCurrency()">
-  ...
-</button>
+<button onclick="handleChangeCurrency()">...</button>
 ```
 
 ### Event handlers
@@ -37,9 +33,8 @@ It's a convention to have event handlers defined as methods on the Component cla
 
 ```js
 class Converter extends React.Component {
-  handleChangeCurrency = (event) => {
-    this.setState({ currency: this.state.currency ===
-      '€' ? '$' : '€' })
+  handleChangeCurrency = event => {
+    this.setState({ currency: this.state.currency === '€' ? '$' : '€' })
   }
 }
 ```
@@ -52,7 +47,9 @@ Don't forget to bind methods. The methods of ES6 classes by default are not boun
 
 ```js
 class Converter extends React.Component {
-  handleClick = (e) => { /* ... */ }
+  handleClick = e => {
+    /* ... */
+  }
   //...
 }
 ```

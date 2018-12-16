@@ -1,8 +1,6 @@
 ---
-title: "React Props"
-date: 2018-10-30T07:00:00+02:00
-description: "How to use props to pass data around your React components"
-tags: react
+title: 'React Props'
+description: 'How to use props to pass data around your React components'
 ---
 
 Props is how Components get their properties. Starting from the top component, every child component gets its props from the parent. In a function component, props is all it gets passed, and they are available by adding `props` as the function argument:
@@ -58,7 +56,7 @@ BlogPostExcerpt.defaultProps = {
 }
 ```
 
-Some tooling like [ESLint](/eslint/) have the ability to enforce defining the defaultProps for a Component with some propTypes not explicitly required.
+Some tooling like [ESLint](https://flaviocopes.com/eslint/) have the ability to enforce defining the defaultProps for a Component with some propTypes not explicitly required.
 
 ## How props are passed
 
@@ -77,9 +75,7 @@ We passed the title as a plain string (something we can _only_ do with strings!)
 A special prop is `children`. That contains the value of anything that is passed in the `body` of the component, for example:
 
 ```html
-<BlogPostExcerpt
-  title="A blog post"
-  description={desc}>
+<BlogPostExcerpt title="A blog post" description="{desc}">
   Something
 </BlogPostExcerpt>
 ```

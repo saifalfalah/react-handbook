@@ -1,16 +1,11 @@
 ---
 title: Introduction to Webpack
-date: 2018-01-27T16:04:59+02:00
-updated: 2018-05-06T06:07:09+02:00
 description: "Webpack is a tool that has got a lot of attention in the last few years, and it is now seen used in almost every project. Learn about it."
-booktitle: "Webpack"
-tags: devtools
-medium: true
 ---
 
 ![Webpack](banner.jpg)
 
-##  What is webpack?
+## What is webpack?
 
 Webpack is a tool that lets you compile JavaScript modules, also known as **module bundler**.
 
@@ -20,14 +15,14 @@ It can perform many operations:
 
 - helps you bundle your resources.
 - watches for changes and re-runs the tasks.
-- can run Babel transpilation to ES5, allowing you to use the latest [JavaScript](/javascript/) features without worrying about browser support.
+- can run Babel transpilation to ES5, allowing you to use the latest [JavaScript](https://flaviocopes.com/javascript/) features without worrying about browser support.
 - can transpile CoffeeScript to JavaScript
 - can convert inline images to data URIs.
 - allows you to use require() for CSS files.
 - can run a development webserver.
 - can handle hot module replacement.
 - can split the output files into multiple files, to avoid having a huge js file to load in the first page hit.
-- can perform [tree shaking](/javascript-glossary/#tree-shaking).
+- can perform [tree shaking](https://flaviocopes.com/javascript-glossary/#tree-shaking).
 
 Webpack is not limited to be used on the frontend, but it's also useful in backend Node.js development as well.
 
@@ -47,13 +42,13 @@ Webpack can be installed globally or locally for each project.
 
 ### Global install
 
-Here's how to install it globally with [Yarn](/yarn/):
+Here's how to install it globally with [Yarn](https://flaviocopes.com/yarn/):
 
 ```
 yarn global add webpack webpack-cli
 ```
 
-with [npm](/npm/):
+with [npm](https://flaviocopes.com/npm/):
 
 ```
 npm i -g webpack webpack-cli
@@ -71,13 +66,13 @@ webpack-cli
 
 Webpack can be installed locally as well. It's the recommended setup, because webpack can be updated per-project, and you have less resistance in using the latest features just for a small project rather than updating all the projects you have the use webpack.
 
-With [Yarn](/yarn/):
+With [Yarn](https://flaviocopes.com/yarn/):
 
 ```
 yarn add webpack webpack-cli -D
 ```
 
-with [npm](/npm/):
+with [npm](https://flaviocopes.com/npm/):
 
 ```
 npm i webpack webpack-cli --save-dev
@@ -166,7 +161,7 @@ module.exports = {
 }
 ```
 
-The [regular expression](/javascript-regular-expressions/) target any CSS file.
+The [regular expression](https://flaviocopes.com/javascript-regular-expressions/) target any CSS file.
 
 A loader can have options:
 
@@ -218,7 +213,7 @@ The order matters, and it's reversed (the last is executed first).
 
 What kind of loaders are there? Many! [You can find the full list here](https://webpack.js.org/loaders/).
 
-A commonly used loader is [Babel](/babel/), which is used to transpile modern JavaScript to ES5 code:
+A commonly used loader is [Babel](https://flaviocopes.com/babel/), which is used to transpile modern JavaScript to ES5 code:
 
 ```js
 module.exports = {
@@ -437,7 +432,7 @@ element.appendChild(img)
 
 Another nice tool to work with images is the `url-loader` loader.
 
-This example loads any PNG file smaller than 8KB as a [data URL](/data-urls/).
+This example loads any PNG file smaller than 8KB as a [data URL](https://flaviocopes.com/data-urls/).
 
 ```js
 module.exports = {

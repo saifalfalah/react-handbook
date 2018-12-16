@@ -1,9 +1,6 @@
 ---
-title: "Format your code with Prettier"
-description: "Prettier is an opinionated code formatter. It is a great way to keep code formatted consistently for you and your team, and supports a lot of different languages out of the box"
-date: 2018-03-08T08:06:29+02:00
-booktitle: Prettier
-tags: devtools
+title: 'Prettier'
+description: 'Prettier is an opinionated code formatter. It is a great way to keep code formatted consistently for you and your team, and supports a lot of different languages out of the box'
 ---
 
 ![Prettier](banner.jpg)
@@ -48,7 +45,7 @@ It has very few options, and **most of the decisions are already taken for you**
 
 ## Difference with ESLint
 
-[ESLint](/eslint/) is a linter, it does not just format, but it also highlights some errors thanks to its static analysis of the code.
+[ESLint](https://flaviocopes.com/eslint/) is a linter, it does not just format, but it also highlights some errors thanks to its static analysis of the code.
 
 It is an invaluable tool and it can be used alongside Prettier.
 
@@ -65,9 +62,9 @@ and some others, but Prettier tries to keep the number of those customizations u
 
 ## Installation
 
-Prettier can run from the command line, and you can install it using [Yarn](/yarn/) or [npm](/npm/).
+Prettier can run from the command line, and you can install it using [Yarn](https://flaviocopes.com/yarn/) or [npm](https://flaviocopes.com/npm/).
 
-Another great use case for Prettier is to run it on PRs for your [Git](/git/) repositories, for example on [GitHub](/github/).
+Another great use case for Prettier is to run it on PRs for your [Git](https://flaviocopes.com/git/) repositories, for example on [GitHub](https://flaviocopes.com/github/).
 
 If you use a supported editor the best thing is to use Prettier directly from the editor, and the Prettier formatting will be run every time you save.
 
@@ -81,4 +78,4 @@ A good style enforces good habits.
 
 Formatting is a topic that's mostly overlooked by beginners, but having a clean and consistent formatting is key to your success as a new developer.
 
-Also, even if you started using [JavaScript](/javascript/) 2 weeks ago, with Prettier your code - style wise - will look just like code written from a JavaScript Guru writing JS since 1998.
+Also, even if you started using [JavaScript](https://flaviocopes.com/javascript/) 2 weeks ago, with Prettier your code - style wise - will look just like code written from a JavaScript Guru writing JS since 1998.

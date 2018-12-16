@@ -1,8 +1,6 @@
 ---
-title: "The React Context API"
-date: 2018-11-01T07:00:00+02:00
-description: "The Context API is a neat way to pass state across the app without having to use props"
-tags: react
+title: 'The Context API'
+description: 'The Context API is a neat way to pass state across the app without having to use props'
 ---
 
 The **Context API** was introduced to allow you to pass state (and allow to update the state) across the app, without having to use props for it.
@@ -16,7 +14,7 @@ How does it work?
 You create a context using `React.createContext()`, which returns a Context object.:
 
 ```js
-const {Provider, Consumer} = React.createContext()
+const { Provider, Consumer } = React.createContext()
 ```
 
 Then you create a wrapper component that returns a **Provider** component, and you add as children all the components from which you want to access the context:
@@ -32,9 +30,7 @@ class Container extends React.Component {
 
   render() {
     return (
-      <Provider value={{state: this.state}}>
-        {this.props.children}
-      </Provider>
+      <Provider value={{ state: this.state }}>{this.props.children}</Provider>
     )
   }
 }
@@ -59,9 +55,7 @@ class Button extends React.Component {
   render() {
     return (
       <Consumer>
-        {(context) => (
-          <button>{context.state.something}</button>
-        )}
+        {context => <button>{context.state.something}</button>}
       </Consumer>
     )
   }
@@ -95,7 +89,6 @@ When using multiple files, you create the content in one file, and import it in 
 //context.js
 import React from 'react'
 export default React.createContext()
-
 
 //component1.js
 import Context from './context'

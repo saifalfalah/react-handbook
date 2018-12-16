@@ -1,17 +1,9 @@
 ---
 title: "A short and simple guide to Babel"
 description: "Babel is an awesome entry in the Web Developer toolset. It's an awesome tool, and it’s been around for quite some time, but nowadays almost every JavaScript developer relies on it, and this will continue going on, because Babel is now indispensable and has solved a big problem for everyone."
-date: 2018-02-13T09:07:49+02:00
-updated: 2018-08-28T18:07:49+02:00
-booktitle: "Babel"
-tags: devtools
 ---
 
-> This article covers Babel 7, the current stable release
-
-## Introduction to Babel
-
-Babel is an awesome tool, and it’s been around for quite some time, but nowadays almost every [JavaScript](/javascript/) developer relies on it, and this will continue going on, because Babel is now indispensable and has solved a big problem for everyone.
+Babel is an awesome tool, and it’s been around for quite some time, but nowadays almost every [JavaScript](https://flaviocopes.com/javascript/) developer relies on it, and this will continue going on, because Babel is now indispensable and has solved a big problem for everyone.
 
 Which problem?
 
@@ -37,13 +29,13 @@ You can configure Babel to transpile modern ES2017 JavaScript into JavaScript ES
 })
 ```
 
-This must happen at build time, so you must setup a workflow that handles this for you. [Webpack](/webpack/) is a common solution.
+This must happen at build time, so you must setup a workflow that handles this for you. [Webpack](https://flaviocopes.com/webpack/) is a common solution.
 
-(P.S. if all this _ES_ thing sounds confusing to you, see more about ES versions [in the ECMAScript guide](/ecmascript/))
+(P.S. if all this _ES_ thing sounds confusing to you, see more about ES versions [in the ECMAScript guide](https://flaviocopes.com/ecmascript/))
 
 ## Installing Babel
 
-Babel is easily installed using [npm](/npm/), locally in a project:
+Babel is easily installed using [npm](https://flaviocopes.com/npm/), locally in a project:
 
 ```sh
 npm install --save-dev @babel/core @babel/cli
@@ -51,7 +43,7 @@ npm install --save-dev @babel/core @babel/cli
 
 > In the past I recommended installing `babel-cli` globally, but this is now discouraged by the Babel maintainers, because by using it locally you can have different versions of Babel in each project, and also checking in babel in your repository is better for team play
 
-Since npm now comes with [`npx`](/node/npx/), locally installed CLI packages can run by typing the command in the project folder:
+Since npm now comes with [`npx`](https://flaviocopes.com/node/npx/), locally installed CLI packages can run by typing the command in the project folder:
 
 So we can run Babel by just running
 
@@ -161,7 +153,7 @@ E.g. "support the last 2 versions of every browser, but for Safari let's support
 }
 ```
 
-or "I don't need browsers support, just let me work with [Node.js](/node/) 6.10"
+or "I don't need browsers support, just let me work with [Node.js](https://flaviocopes.com/node/) 6.10"
 
 ```js
 {
@@ -190,7 +182,7 @@ By including it, you are all ready to go developing React apps, with JSX transfo
 
 If you want to run modern JavaScript in the browser, Babel on its own is not enough, you also need to bundle the code. Webpack is the perfect tool for this.
 
-> TIP: read the [webpack guide](/webpack/) if you're not familiar with webpack
+> TIP: read the [webpack guide](https://flaviocopes.com/webpack/) if you're not familiar with webpack
 
 Modern JS needs two different stages: a compile stage, and a runtime stage. This is because some ES6+ features need a polyfill or a runtime helper.
 

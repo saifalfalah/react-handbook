@@ -1,8 +1,6 @@
 ---
-title: "Introduction to React Hooks"
-date: 2018-12-17T07:00:00+02:00
-description: "Learn how Render Hooks can help you build a React application"
-tags: React
+title: 'Introduction to React Hooks'
+description: 'Learn how Render Hooks can help you build a React application'
 ---
 
 Hooks is a feature that will be introduced in React 16.7, and is going to change how we write React apps in the future.
@@ -26,9 +24,7 @@ const Counter = () => {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   )
 }
@@ -68,10 +64,10 @@ const CounterWithNameAndSideEffect = () => {
 
   return (
     <div>
-      <p>Hi {name} you clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <p>
+        Hi {name} you clicked {count} times
+      </p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
       <button onClick={() => setName(name === 'Flavio' ? 'Roger' : 'Flavio')}>
         Change name
       </button>
@@ -79,7 +75,10 @@ const CounterWithNameAndSideEffect = () => {
   )
 }
 
-ReactDOM.render(<CounterWithNameAndSideEffect />, document.getElementById('app'))
+ReactDOM.render(
+  <CounterWithNameAndSideEffect />,
+  document.getElementById('app')
+)
 ```
 
 The same `componentWillUnmount` job can be achieved by optionally **returning** a function from our `useEffect()` parameter:
@@ -99,9 +98,12 @@ Since the `useEffect()` functions are run on every subsequent re-render/update, 
 React will only re-run the side effect if one of the items in this array changes.
 
 ```js
-useEffect(() => {
-  console.log(`Hi ${name} you clicked ${count} times`)
-}, [name, count])
+useEffect(
+  () => {
+    console.log(`Hi ${name} you clicked ${count} times`)
+  },
+  [name, count]
+)
 ```
 
 Similarly you can tell React to only execute the side effect once (at mount time), by passing an empty array:

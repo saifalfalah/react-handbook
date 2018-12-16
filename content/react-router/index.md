@@ -1,13 +1,10 @@
 ---
 title: Introduction to React Router
-date: 2018-03-28T07:04:59+02:00
 description: "React Router 4 is the perfect tool to link together the URL and your React app. React Router is the de-facto React routing library, and it's one of the most popular projects built on top of React."
-booktitle: "React Router"
-tags: react
+booktitle: 'React Router'
 ---
 
 ![React Router](banner.png)
-
 
 > This tutorial introduces React Router 4, the last stable version
 
@@ -27,13 +24,13 @@ React Router offers a way to write your code so that **it will show certain comp
 
 ## Installation
 
-With [npm](/npm/):
+With [npm](https://flaviocopes.com/npm/):
 
 ```sh
 npm install react-router-dom
 ```
 
-With [Yarn](/yarn/):
+With [Yarn](https://flaviocopes.com/yarn/):
 
 ```sh
 yarn add react-router-dom
@@ -53,7 +50,7 @@ https://application.com/dashboard   /* BrowserRouter */
 https://application.com/#/dashboard /* HashRouter    */
 ```
 
-Which one to use is mainly dictated by the browsers you need to support. `BrowserRouter` uses the [History API](/history-api/), which is relatively recent, and not supported in IE9 and below. If you don't have to worry about older browsers, it's the recommended choice.
+Which one to use is mainly dictated by the browsers you need to support. `BrowserRouter` uses the [History API](https://flaviocopes.com/history-api/), which is relatively recent, and not supported in IE9 and below. If you don't have to worry about older browsers, it's the recommended choice.
 
 ## Components
 

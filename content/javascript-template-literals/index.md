@@ -1,10 +1,6 @@
 ---
-title: A guide to JavaScript Template Literals
-date: 2018-03-15T10:07:09+02:00
+title: Template Literals
 description: "Introduced in ES2015, aka ES6, Template Literals offer a new way to declare strings, but also some new interesting constructs which are already widely popular."
-booktitle: "Template Literals"
-tags: js
-tags_weight: 21
 ---
 
 ## Introduction to Template Literals

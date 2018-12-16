@@ -1,8 +1,6 @@
 ---
-title: "React Render Props"
-date: 2019-01-01T07:00:00+02:00
-description: "Learn how Render Props can help you build a React application"
-tags: React
+title: 'React Render Props'
+description: 'Learn how Render Props can help you build a React application'
 ---
 
 A common pattern used to share state between components is to use the `children` prop.
@@ -13,23 +11,19 @@ Inside a component JSX you can render `{this.props.children}` which automaticall
 class Parent extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { /*...*/ }
+    this.state = {
+      /*...*/
+    }
   }
 
   render() {
-    return (
-      <div>
-        {this.props.children}
-      </div>
-    )
+    return <div>{this.props.children}</div>
   }
 }
 
-const Children1 = () => {
-}
+const Children1 = () => {}
 
-const Children2 = () => {
-}
+const Children2 = () => {}
 
 const App = () => (
   <Parent>
@@ -51,25 +45,15 @@ class Parent extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        {this.props.children(this.state.name)}
-      </div>
-    )
+    return <div>{this.props.children(this.state.name)}</div>
   }
 }
 
-const Children1 = (props) => {
+const Children1 = props => {
   return <p>{props.name}</p>
 }
 
-const App = () => (
-  <Parent>
-    {name => (
-      <Children1 name={name} />
-    )}
-  </Parent>
-)
+const App = () => <Parent>{name => <Children1 name={name} />}</Parent>
 ```
 
 Instead of using the `children` prop, which has a very specific meaning, you can use any prop, and so you can use this pattern multiple times on the same component:
@@ -92,16 +76,19 @@ class Parent extends React.Component {
   }
 }
 
-const Children1 = (props) => {
+const Children1 = props => {
   return <p>{props.name}</p>
 }
 
-const Children2 = (props) => {
+const Children2 = props => {
   return <p>{props.age}</p>
 }
 
 const App = () => (
-  <Parent someprop1={name => (<Children1 name={name} />)} someprop2={age => (<Children2 age={age} />)} />
+  <Parent
+    someprop1={name => <Children1 name={name} />}
+    someprop2={age => <Children2 age={age} />}
+  />
 )
 
 ReactDOM.render(<App />, document.getElementById('app'))

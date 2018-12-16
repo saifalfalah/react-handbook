@@ -1,8 +1,6 @@
 ---
-title: "React: Presentational vs Container Components"
-date: 2018-12-21T07:00:00+02:00
-description: "The difference between Presentational and Container Components in React"
-tags: react
+title: 'React: Presentational vs Container Components'
+description: 'The difference between Presentational and Container Components in React'
 ---
 
 In React components are often divided in 2 big buckets: **presentational components** and **container components**.
@@ -24,12 +22,13 @@ As a way to simplify the distinction, we can say **presentational components are
 For example, this is a presentational components. It gets data from its props, and just focuses on showing an element:
 
 ```js
-const Users = props =>
+const Users = props => (
   <ul>
     {props.users.map(user => (
       <li>{user}</li>
     ))}
   </ul>
+)
 ```
 
 On the other hand this is a container components. It manages and stores its own data, and uses the presentational component to display it.

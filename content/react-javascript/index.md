@@ -1,8 +1,6 @@
 ---
-title: "How much JavaScript you need to know to use React?"
-date: 2018-11-17T07:00:00+02:00
-description: "Find out if you have to learn something before diving into learning React"
-tags: react
+title: 'How much JavaScript you need to know to use React?'
+description: 'Find out if you have to learn something before diving into learning React'
 ---
 
 If you are willing to learn React, you have first to have a few things under your belt. There are some pre-requisites technologies you have to be familiar with, in particular related to some of the more recent JavaScript features you'll use over and over in React.

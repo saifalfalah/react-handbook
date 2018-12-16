@@ -1,12 +1,6 @@
 ---
-title: "Modern Asynchronous JavaScript with Async and Await"
-description: "Discover the modern approach to asynchronous functions in JavaScript. JavaScript evolved in a very short time from callbacks to Promises, and since ES2017 asynchronous JavaScript is even simpler with the async/await syntax"
-booktitle: Async and Await
-date: 2018-02-26T09:07:49+02:00
-updated: 2018-04-22T09:07:49+02:00
-medium: true
-tags: js
-tags_weight: 29
+title: 'Asynchronous JavaScript with Async and Await'
+description: 'Discover the modern approach to asynchronous functions in JavaScript. JavaScript evolved in a very short time from callbacks to Promises, and since ES2017 asynchronous JavaScript is even simpler with the async/await syntax'
 ---
 
 ## Introduction
@@ -33,9 +27,9 @@ An async function returns a promise, like in this example:
 
 ```js
 const doSomethingAsync = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve('I did something'), 3000)
-    })
+  return new Promise(resolve => {
+    setTimeout(() => resolve('I did something'), 3000)
+  })
 }
 ```
 
@@ -43,7 +37,7 @@ When you want to **call** this function you prepend `await`, and **the calling c
 
 ```js
 const doSomething = async () => {
-    console.log(await doSomethingAsync())
+  console.log(await doSomethingAsync())
 }
 ```
 
@@ -53,13 +47,13 @@ This is a simple example of async/await used to run a function asynchronously:
 
 ```js
 const doSomethingAsync = () => {
-    return new Promise((resolve) => {
-        setTimeout(() => resolve('I did something'), 3000)
-    })
+  return new Promise(resolve => {
+    setTimeout(() => resolve('I did something'), 3000)
+  })
 }
 
 const doSomething = async () => {
-    console.log(await doSomethingAsync())
+  console.log(await doSomethingAsync())
 }
 
 console.log('Before')
@@ -92,7 +86,6 @@ aFunction().then(alert) // This will alert 'test'
 ```
 
 and it's the same as:
-
 
 ```js
 const aFunction = async () => {
@@ -143,23 +136,23 @@ Async functions can be chained very easily, and the syntax is much more readable
 
 ```js
 const promiseToDoSomething = () => {
-    return new Promise(resolve => {
-        setTimeout(() => resolve('I did something'), 10000)
-    })
+  return new Promise(resolve => {
+    setTimeout(() => resolve('I did something'), 10000)
+  })
 }
 
 const watchOverSomeoneDoingSomething = async () => {
-    const something = await promiseToDoSomething()
-    return something + ' and I watched'
+  const something = await promiseToDoSomething()
+  return something + ' and I watched'
 }
 
 const watchOverSomeoneWatchingSomeoneDoingSomething = async () => {
-    const something = await watchOverSomeoneDoingSomething()
-    return something + ' and I watched as well'
+  const something = await watchOverSomeoneDoingSomething()
+  return something + ' and I watched as well'
 }
 
-watchOverSomeoneWatchingSomeoneDoingSomething().then((res) => {
-    console.log(res)
+watchOverSomeoneWatchingSomeoneDoingSomething().then(res => {
+  console.log(res)
 })
 ```
 

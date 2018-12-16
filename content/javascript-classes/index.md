@@ -1,10 +1,6 @@
 ---
-title: "How to use JavaScript Classes"
-description: "In 2015 the ECMAScript 6 (ES6) standard introduced classes. Learn all about them"
-date: 2018-07-26T07:06:29+02:00
-booktitle: Classes
-tags: js
-tags_weight: 8
+title: 'JavaScript Classes'
+description: 'In 2015 the ECMAScript 6 (ES6) standard introduced classes. Learn all about them'
 ---
 
 In 2015 the ECMAScript 6 (ES6) standard introduced classes.

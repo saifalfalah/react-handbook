@@ -1,8 +1,6 @@
 ---
 title: Work with objects and arrays using Rest and Spread
-description: "Learn two modern techniques to work with arrays and objects in JavaScript"
-date: 2019-01-03T07:00:00+02:00
-tags: js
+description: 'Learn two modern techniques to work with arrays and objects in JavaScript'
 ---
 
 You can expand an array, an object or a string using the spread operator `...`.
@@ -68,7 +66,13 @@ ES2018 introduces rest properties, which are the same but for objects.
 **Rest properties**:
 
 ```js
-const { first, second, ...others } = { first: 1, second: 2, third: 3, fourth: 4, fifth: 5 }
+const { first, second, ...others } = {
+  first: 1,
+  second: 2,
+  third: 3,
+  fourth: 4,
+  fifth: 5
+}
 
 first // 1
 second // 2

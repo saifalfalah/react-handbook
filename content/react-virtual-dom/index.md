@@ -1,8 +1,6 @@
 ---
-title: "The Virtual DOM"
-date: 2018-10-27T07:00:00+02:00
-description: "The Virtual DOM is a technique that React uses to optimize interacting with the browser"
-tags: react
+title: 'The Virtual DOM'
+description: 'The Virtual DOM is a technique that React uses to optimize interacting with the browser'
 ---
 
 Many existing frameworks, before React came on the scene, were directly manipulating the DOM on every change.

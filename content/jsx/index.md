@@ -1,10 +1,6 @@
 ---
-title: Getting started with JSX
-date: 2018-01-31T10:07:09+02:00
+title: JSX
 description: "JSX is a technology that was introduced by React. Let's dive into it"
-booktitle: "JSX"
-bookdescription: " "
-tags: react
 ---
 
 ![jsx](banner.png)
@@ -15,7 +11,7 @@ JSX is a technology that was introduced by React.
 
 Although React can work completely fine without using JSX, it's an ideal technology to work with components, so React benefits a lot from JSX.
 
-At first, you might think that using JSX is like mixing HTML and [JavaScript](/javascript/) (and as you'll see CSS).
+At first, you might think that using JSX is like mixing HTML and [JavaScript](https://flaviocopes.com/javascript/) (and as you'll see CSS).
 
 But this is not true, because what you are really doing when using JSX syntax is writing a declarative syntax of what a component UI should be.
 
@@ -233,7 +229,7 @@ The `value` attribute always holds the current value of the field.
 
 The `defaultValue` attribute holds the default value that was set when the field was created.
 
-_This helps solve some weird behavior of regular [DOM](/dom/) interaction when inspecting `input.value` and `input.getAttribute('value')` returning one the current value and one the original default value._
+_This helps solve some weird behavior of regular [DOM](https://flaviocopes.com/dom/) interaction when inspecting `input.value` and `input.getAttribute('value')` returning one the current value and one the original default value._
 
 This also applies to the `textarea` field, e.g.
 

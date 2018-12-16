@@ -1,8 +1,6 @@
 ---
 title: "React PropTypes"
-date: 2018-11-02T07:00:00+02:00
 description: "How to use PropTypes to set the required type of a prop"
-tags: react
 ---
 
 Since JavaScript is a dynamically typed language, we don't really have a way to enforce the type of a variable at compile time, and if we pass invalid types, they will fail at runtime or give weird results if the types are compatible but not what we expect.
