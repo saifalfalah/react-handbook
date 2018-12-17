@@ -1,13 +1,13 @@
 ---
-title: 'Introduction to React Hooks'
-description: 'Learn how Render Hooks can help you build a React application'
+title: 'Hooks'
+description: 'Learn how Hooks can help you build a React application'
 ---
 
 Hooks is a feature that will be introduced in React 16.7, and is going to change how we write React apps in the future.
 
 Before Hooks appeared, some key things in components we only possible using class components: having their own state, and using lifecycle events. Function components, lighter and more flexible, were limited in functionality.
 
-**Hooks allow function components to have state and to respond to lifecycle events** too, and kind of make class components obsolete.
+**Hooks allow function components to have state and to respond to lifecycle events** too, and kind of make class components obsolete. They also allow function components to have a good way to handle events.
 
 ## Access state
 
@@ -120,6 +120,36 @@ Example on Codepen:
 
 <p data-height="627" data-theme-id="0" data-slug-hash="WLrxXp" data-default-tab="js,result" data-user="flaviocopes" data-pen-title="React Hooks example #3 side effects" class="codepen">See the Pen <a href="https://codepen.io/flaviocopes/pen/WLrxXp/">React Hooks example #3 side effects</a> by Flavio Copes (<a href="https://codepen.io/flaviocopes">@flaviocopes</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+## Handle events in function components
+
+Before hooks, you either used class components, or you passed an event handler using props.
+
+Now we can use the `useCallback()` built-in API:
+
+```js
+const Button = () => {
+  const handleClick = useCallback(() => {
+    //...do something
+  })
+  return <button onClick={handleClick} />
+}
+```
+
+Any parameter used inside the function must be passed through a second parameter to `useCallback()`, in an array:
+
+```js
+const Button = () => {
+  let name = '' //... add logic
+  const handleClick = useCallback(
+    () => {
+      //...do something
+    },
+    [name]
+  )
+  return <button onClick={handleClick} />
+}
+```
 
 ## Enable cross-component communication using custom hooks
 

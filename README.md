@@ -59,6 +59,9 @@ You can directly edit any chapter by opening it and clicking the "Edit" button i
   - [Higher-order components](content/react-higher-order-components/index.md)
   - [Render Props](content/react-render-props/index.md)
   - [Hooks](content/react-hooks/index.md)
+- Practical examples
+  - [Build a simple counter](content/react-example-counter/index.md)
+  - [Fetch and display GitHub users information via API](content/react-example-githubusers/index.md)
 - Styling
   - [CSS in React](content/react-css/index.md)
   - [SASS with React](content/react-sass/index.md)
