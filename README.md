@@ -1,8 +1,10 @@
 # The React Handbook
 
-> Beta edition
+> Beta version 0.9.1
 
 Hi! This repository contains the React Handbook content. I am still working on it, so please don't share it around as it might still be incomplete 🙂 ..trying to keep it private for the small newsletter subscribers community until I reach `1.0`.
+
+PDF version available at <https://www.dropbox.com/s/zgwnkyxzjfmhf8d/react-handbook.pdf>
 
 I'd appreciate any help you can provide in:
 
