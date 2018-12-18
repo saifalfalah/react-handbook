@@ -209,20 +209,20 @@ You are not limited to using `fetch` of course, **any promise is good to go**.
 
 ### `Promise.race()`
 
-`Promise.race()` runs when the first of the promises you pass to it resolves, and it runs the attached callback just once, with the result of the first promise resolved.
+`Promise.race()` runs as soon as one of the promises you pass to it resolves, and it runs the attached callback just once with the result of the first promise resolved.
 
 Example:
 
 ```js
-const first = new Promise((resolve, reject) => {
-  setTimeout(resolve, 500, 'first')
+const promiseOne = new Promise((resolve, reject) => {
+  setTimeout(resolve, 500, 'one')
 })
-const second = new Promise((resolve, reject) => {
-  setTimeout(resolve, 100, 'second')
+const promiseTwo = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 'two')
 })
 
-Promise.race([first, second]).then(result => {
-  console.log(result) // second
+Promise.race([promiseOne, promiseTwo]).then(result => {
+  console.log(result) // 'two'
 })
 ```
 
