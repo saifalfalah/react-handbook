@@ -49,7 +49,7 @@ A variable initialized with `var` inside a function is assigned to that function
 
 Any variable defined into a function with the same name of a global variable takes precedence over the global variable, shadowing it.
 
-It's important to understand that a block (identified by a pair of curly braces) does not define a new scope. A new scope is only created when a function is created, because `var` has not block scope, but function scope.
+It's important to understand that a block (identified by a pair of curly braces) does not define a new scope. A new scope is only created when a function is created, because `var` does not have block scope, but function scope.
 
 Inside a function, any variable defined in it is visible throughout all the function code, even if the variable is declared at the end of the function it can still be referenced in the beginning, because JavaScript before executing the code actually _moves all variables on top_ (something that is called **hoisting**). To avoid confusion, always declare variables at the beginning of a function.
 
