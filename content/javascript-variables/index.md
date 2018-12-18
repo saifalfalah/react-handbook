@@ -65,7 +65,7 @@ Defining `let` outside of any function - contrary to `var` - does not create a g
 
 ## Using `const`
 
-Variables declared with `var` or `let` can be changed later on in the program, and reassigned. A once a `const` is initialized, its value can never be changed again, and it can't be reassigned to a different value.
+Variables declared with `var` or `let` can be changed later on in the program, and reassigned. Once a `const` is initialized, its value can never be changed again, and it can't be reassigned to a different value.
 
 ```
 const a = 'test'
