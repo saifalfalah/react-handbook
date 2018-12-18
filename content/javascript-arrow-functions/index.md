@@ -10,7 +10,7 @@ In my opinion this change was so welcoming that you now rarely see in modern cod
 Visually, it’s a simple and welcome change, which allows you to write functions with a shorter syntax, from:
 
 ```js
-const myFunction = function foo() {
+const myFunction = function() {
   //...
 }
 ```
