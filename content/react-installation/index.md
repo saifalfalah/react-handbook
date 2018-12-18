@@ -76,7 +76,7 @@ Starting in this way with script tags is good for building prototypes and have a
 
 ## Use create-react-app
 
-`create-react-app` is a project aimed at getting you up to speed with React in no time, and any React app that is going to outgrow a single page is going to be use it.
+`create-react-app` is a project aimed at getting you up to speed with React in no time, and any React app that is going to outgrow a single page is going to be using it.
 
 You start by using [`npx`](https://flaviocopes.com/npx/), which is an easy way to download and execute Node.js commands without installing them. `npx` comes with `npm` (since version 5.2) and if you don't have npm installed already, do it now from <https://nodejs.org> (npm is installed with Node).
 
