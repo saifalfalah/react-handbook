@@ -140,7 +140,6 @@ const Card = props => {
 }
 
 const CardList = props => <div>{props.cards.map(card => <Card {...card} />)}</div>
-}
 
 const Form = props => {
   const [username, setUsername] = useState('')

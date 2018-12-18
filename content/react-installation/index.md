@@ -34,7 +34,7 @@ In this case, you add 2 script tags to the end of the `body` tag:
 
 > The `16.7.0-alpha.2` version in the links points to the latest Alpha of 16.7 (at the time of writing), which has Hooks available. Please change it to the latest version of React that is available.
 
-Here we loaded both React and React DOM. Why 2 libraries? Because React is 100% independent from the browser and can be used outside it (for example with on Mobile devices with React Native). Hence the need for React DOM, to add the wrappers for the browser.
+Here we loaded both React and React DOM. Why 2 libraries? Because React is 100% independent from the browser and can be used outside it (for example on Mobile devices with React Native). Hence the need for React DOM, to add the wrappers for the browser.
 
 After those tags you can load your JavaScript files that use React, or even inline JavaScript in a `script` tag:
 
@@ -128,7 +128,7 @@ An easy way to have the `create-react-app` structure, without installing it, is 
 
 ![](codesandbox.png)
 
-CodeSandbox is a great to start a React project without having to install it locally.
+CodeSandbox is a great way to start a React project without having to install it locally.
 
 ## Codepen
 

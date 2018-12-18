@@ -23,7 +23,7 @@ const myFunction = () => {
 }
 ```
 
-If the function body contains just a single statement, you can omit the parentheses and write all on a single line:
+If the function body contains just a single statement, you can omit the brackets and write all on a single line:
 
 ```js
 const myFunction = () => doSomething()
