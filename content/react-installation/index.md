@@ -118,7 +118,7 @@ Since `create-react-app` is a set of common denominator conventions and a limite
 
 When you eject, you lose the ability of automatic updates but you gain more flexibility in the [Babel](https://flaviocopes.com/babel/) and [Webpack](https://flaviocopes.com/webpack/) configuration.
 
-When you eject the action is irreversible. You will get 2 new folders in your application directory, `config` and `scripts`. Those contain all the configuration you need and now you can start editing it.
+Ejecting is an irreversible action. You will get 2 new folders in your application directory, `config` and `scripts`. Those contain all the configuration you need and now you can start editing it.
 
 > If you already have a React app installed using an older version of React, first check the version by adding `console.log(React.version)` in your app, then you can update by running `yarn add react@16.7`, and yarn will prompt you to update (choose the latest version available). Repeat for `yarn add react-dom@16.7` (change "16.7" with whatever is the newest version of React at the moment)
 
