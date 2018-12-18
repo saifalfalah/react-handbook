@@ -128,7 +128,7 @@ An easy way to have the `create-react-app` structure, without installing it, is 
 
 ![](codesandbox.png)
 
-CodeSandbox is a great to start a React project without having to install it locally.
+CodeSandbox is a great way to start a React project without having to install it locally.
 
 ## Codepen
 
