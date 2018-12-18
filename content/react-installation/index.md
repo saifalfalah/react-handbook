@@ -5,9 +5,9 @@ description: 'How to install React on your development computer'
 
 How do you install React?
 
-React is a library, so saying _install_ might be a bit weird. Maybe _setup_ is a better name, but you got the concept.
+React is a library, so saying _install_ might sound a bit weird. Maybe _setup_ is a better word, but you get the concept.
 
-There are various ways to have React ready to be used on your app or site.
+There are various ways to setup React so that it can be used on your app or site.
 
 ## Load React directly in the web page
 
@@ -32,7 +32,7 @@ In this case, you add 2 script tags to the end of the `body` tag:
 </html>
 ```
 
-> The `16.7.0-alpha.2` version in the links points to the latest Alpha of 16.7, which has Hooks available. Please change it to the latest version of React you see now available.
+> The `16.7.0-alpha.2` version in the links points to the latest Alpha of 16.7 (at the time of writing), which has Hooks available. Please change it to the latest version of React that is available.
 
 Here we loaded both React and React DOM. Why 2 libraries? Because React is 100% independent from the browser and can be used outside it (for example with on Mobile devices with React Native). Hence the need for React DOM, to add the wrappers for the browser.
 
@@ -72,11 +72,11 @@ ReactDOM.render(<Button />, document.getElementById('root'))
 
 Check out this simple Glitch example: <https://glitch.com/edit/#!/react-example-inline-jsx?path=script.js>
 
-Starting in this way with script tags is good for building prototypes and have a quick start without having to set up a complex workflow.
+Starting in this way with script tags is good for building prototypes and enables a quick start without having to set up a complex workflow.
 
 ## Use create-react-app
 
-`create-react-app` is a project aimed at getting you up to speed with React in no time, and any React app that is going to outgrow a single page is going to be use it.
+`create-react-app` is a project aimed at getting you up to speed with React in no time, and any React app that needs to outgrow a single page will find that `create-react-app` meets that need.
 
 You start by using [`npx`](https://flaviocopes.com/npx/), which is an easy way to download and execute Node.js commands without installing them. `npx` comes with `npm` (since version 5.2) and if you don't have npm installed already, do it now from <https://nodejs.org> (npm is installed with Node).
 
@@ -114,11 +114,11 @@ In addition to `npm start`, `create-react-app` added a few other commands:
 
 Ejecting is the act of deciding that `create-react-app` has done enough for you, but you want to do more than what it allows.
 
-Since `create-react-app` is a set of common denominator conventions and a limited amount of options, it's somewhat guaranteed that at some point your needs will require you something unique that outgrows the capabilities of `create-react-app`.
+Since `create-react-app` is a set of common denominator conventions and a limited amount of options, it's probable that at some point your needs will demand something unique that outgrows the capabilities of `create-react-app`.
 
 When you eject, you lose the ability of automatic updates but you gain more flexibility in the [Babel](https://flaviocopes.com/babel/) and [Webpack](https://flaviocopes.com/webpack/) configuration.
 
-When you eject the action is irreversible. You will get 2 new folders in your application directory, `config` and `scripts`. Those contain all the configuration you need and now you can start editing it.
+When you eject the action is irreversible. You will get 2 new folders in your application directory, `config` and `scripts`. Those contain the configurations - and now you can start editing them.
 
 > If you already have a React app installed using an older version of React, first check the version by adding `console.log(React.version)` in your app, then you can update by running `yarn add react@16.7`, and yarn will prompt you to update (choose the latest version available). Repeat for `yarn add react-dom@16.7` (change "16.7" with whatever is the newest version of React at the moment)
 
