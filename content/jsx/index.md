@@ -93,7 +93,7 @@ ReactDOM.render(
 
 This very basic example is just the starting point, but you can already see how more complicated the plain JS syntax is compared to using JSX.
 
-At the time of writing the most popular way to perform the **transpilation** is to use **Babel**, which is the default option when running `create-react-app`, so if you use it you don't have to worry, everything happens under the hoods for you.
+At the time of writing the most popular way to perform the **transpilation** is to use **Babel**, which is the default option when running `create-react-app`, so if you use it you don't have to worry, everything happens under the hood for you.
 
 If you don't use `create-react-app` you need to setup Babel yourself.
 
@@ -128,11 +128,11 @@ ReactDOM.render(
 )
 ```
 
-As you can see _we nested JavaScript inside a JSX defined inside a JavaScript nested in a JSX_. You can go as deep as you need.
+As you can see _we nested JavaScript inside JSX defined inside JavaScript nested in JSX_. You can go as deep as you need.
 
 ## HTML in JSX
 
-JSX resembles a lot HTML, but it's actually a XML syntax.
+JSX resembles HTML a lot, but it's actually XML syntax.
 
 In the end you render HTML, so you need to know a few differences between how you would define some things in HTML, and how you define them in JSX.
 
@@ -196,7 +196,7 @@ or
 ReactDOM.render(<div style={{ color: 'white' }}>Hello World!</div>, mountNode)
 ```
 
-The CSS values you write in JSX is slightly different than plain CSS:
+The CSS values you write in JSX are slightly different from plain CSS:
 
 - the keys property names are camelCased
 - values are just strings
@@ -267,7 +267,7 @@ Passing a function to the `onChange` attribute you can subscribe to events on fo
 
 It works consistently across fields, even `radio`, `select` and `checkbox` input fields fire a `onChange` event.
 
-`onChange` also fires when typing a character into a `input` or `textarea` field.
+`onChange` also fires when typing a character into an `input` or `textarea` field.
 
 ## JSX auto escapes
 
