@@ -5,7 +5,7 @@ description: 'Learn how Hooks can help you build a React application'
 
 Hooks is a feature that will be introduced in React 16.7, and is going to change how we write React apps in the future.
 
-Before Hooks appeared, some key things in components we only possible using class components: having their own state, and using lifecycle events. Function components, lighter and more flexible, were limited in functionality.
+Before Hooks appeared, some key things in components were only possible using class components: having their own state, and using lifecycle events. Function components, lighter and more flexible, were limited in functionality.
 
 **Hooks allow function components to have state and to respond to lifecycle events** too, and kind of make class components obsolete. They also allow function components to have a good way to handle events.
 
@@ -190,4 +190,4 @@ const MyComponent = () => {
 }
 ```
 
-When exactly adding hooks instead of regular functions is determined on a use case basis, and only experience will tell.
+When exactly to add hooks instead of regular functions should be determined on a use case basis, and only experience will tell.
