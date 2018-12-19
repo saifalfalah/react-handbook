@@ -1,13 +1,13 @@
 ---
 title: "Introduction to ES Modules"
-description: "ES Modules is the ECMAScript standard for working with modules. While Node.js has been using the CommonJS standard since years, the browser never had a module system, as every major decision such as a module system must be first standardized by ECMAScript and then implemented"
+description: "ES Modules is the ECMAScript standard for working with modules. While Node.js has been using the CommonJS standard for years, the browser never had a module system, as every major decision such as a module system must be first standardized by ECMAScript and then implemented"
 ---
 
 ![ES Modules](banner.jpg)
 
 ES Modules is the ECMAScript standard for working with modules.
 
-While [Node.js](https://flaviocopes.com/node/) has been using the CommonJS standard since years, the browser never had a module system, as every major decision such as a module system must be first standardized by ECMAScript and then implemented by the browser.
+While [Node.js](https://flaviocopes.com/node/) has been using the CommonJS standard for years, the browser never had a module system, as every major decision such as a module system must be first standardized by ECMAScript and then implemented by the browser.
 
 This standardization process completed with [ES6](https://flaviocopes.com/es6/) and browsers started implementing this standard trying to keep everything well aligned, working all in the same way, and now ES Modules are supported in Chrome, Safari, Edge and Firefox (since version 60).
 
@@ -29,7 +29,7 @@ while CommonJS uses
 const package = require('module-name')
 ```
 
-A module is a JavaScript file that **exports** one or more value (objects, functions or variables), using the `export` keyword. For example, this module exports a function that returns a string uppercase:
+A module is a JavaScript file that **exports** one or more values (objects, functions or variables), using the `export` keyword. For example, this module exports a function that returns a string uppercase:
 
 > uppercase.js
 
@@ -128,7 +128,7 @@ You can import the default export, and any non-default export by name, like in t
 import React, { Component } from 'react'
 ```
 
-You can check an ES Modules example on <https://glitch.com/edit/#!/flavio-es-modules-example?path=index.html>
+You can see an ES Modules example here: <https://glitch.com/edit/#!/flavio-es-modules-example?path=index.html>
 
 ## CORS
 
@@ -149,4 +149,4 @@ ES Modules are one of the biggest features introduced in modern browsers. They a
 
 We can now use them! But we must also remember that having more than a few modules is going to have a performance hit on our pages, as it's one more step that the browser must perform at runtime.
 
-[Webpack](https://flaviocopes.com/webpack/) is probably going to still be a huge player even if ES Modules land in the browser, but having such a feature directly built in the language is huge for a unification of how modules work in the client-side and on Node.js as well.
+[Webpack](https://flaviocopes.com/webpack/) is probably going to still be a huge player even if ES Modules land in the browser, but having such a feature directly built in the language is huge for a unification of how modules work client-side and on Node.js as well.
