@@ -9,7 +9,7 @@ Before that, JavaScript only had a quite unique way to implement inheritance. It
 
 People coming from Java or Python or other languages had a hard time understanding the intricacies of prototypal inheritance, so the ECMAScript committee decided to introduce a syntactic sugar on top of them, and resemble how classes-based inheritance works in other popular implementations.
 
-This is important: JavaScript under the hoods is still the same, and you can access an object prototype in the usual way.
+This is important: JavaScript under the hood is still the same, and you can access an object prototype in the usual way.
 
 ## A class definition
 
@@ -38,7 +38,7 @@ const flavio = new Person('Flavio')
 flavio.hello()
 ```
 
-## Classes inheritance
+## Class inheritance
 
 A class can extend another class, and objects initialized using that class inherit all the methods of both classes.
 
@@ -85,7 +85,7 @@ There are workarounds, but I won't describe them here.
 
 ## Getters and setters
 
-You can add methods prefixed with `get` or `set` to create a getter and setter, which are two different pieces of code that are execute based on what you are doing: accessing the variable, or modifying its value.
+You can add methods prefixed with `get` or `set` to create a getter and setter, which are two different pieces of code that are executed based on what you are doing: accessing the variable, or modifying its value.
 
 ```js
 class Person {
