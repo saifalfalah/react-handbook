@@ -17,7 +17,7 @@ First, there are 3 phases in a React component lifecycle:
 - Updating
 - Unmounting
 
-Let's see those 3 phases in details and the methods that gets called for each.
+Let's see those 3 phases in detail and the methods that get called for each.
 
 ## Mounting
 
@@ -39,17 +39,17 @@ In this method you haven't access to `this` as it's a static method.
 
 It's a pure method, so it should not cause side effects and should return the same output when called multiple times with the same input.
 
-Return an object with the updated elements of the state (or null if the state does not change)
+Returns an object with the updated elements of the state (or null if the state does not change)
 
 ### render()
 
-From the render() method you returns the JSX that builds the component interface.
+From the render() method you return the JSX that builds the component interface.
 
 It's a pure method, so it should not cause side effects and should return the same output when called multiple times with the same input.
 
 ### componentDidMount()
 
-This method is the one that you will use to perform API calls, process operations on the DOM.
+This method is the one that you will use to perform API calls, or process operations on the DOM.
 
 ## Updating
 
