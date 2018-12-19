@@ -17,7 +17,7 @@ When Promises were introduced in ES2015, they were meant to solve a problem with
 
 Promises were introduced to solve the famous _callback hell_ problem, but they introduced complexity on their own, and syntax complexity.
 
-They were good primitives around which a better syntax could be exposed to the developers, so when the time was right we got **async functions**.
+They were good primitives around which a better syntax could be exposed to developers, so when the time was right we got **async functions**.
 
 They make the code look like it's synchronous, but it's asynchronous and non-blocking behind the scenes.
 
