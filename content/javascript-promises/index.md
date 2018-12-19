@@ -7,7 +7,7 @@ A promise is commonly defined as **a proxy for a value that will eventually beco
 
 Promises are one way to deal with asynchronous code, without writing too many callbacks in your code.
 
-Although being around since years, they have been standardized and introduced in [ES2015](https://flaviocopes.com/ecmascript/#es2015-aka-es6), and now they have been superseded in [ES2017](https://flaviocopes.com/ecmascript/#es2017-aka-es8) by [async functions](https://flaviocopes.com/javascript-async-await).
+Although they've been around for years, they were standardized and introduced in [ES2015](https://flaviocopes.com/ecmascript/#es2015-aka-es6), and now they have been superseded in [ES2017](https://flaviocopes.com/ecmascript/#es2017-aka-es8) by [async functions](https://flaviocopes.com/javascript-async-await).
 
 **Async functions** use the promises API as their building block, so understanding them is fundamental even if in newer code you'll likely use async functions instead of promises.
 
@@ -19,7 +19,7 @@ At this point, the caller function waits for it to either return the promise in 
 
 ### Which JS API use promises?
 
-In addition to your own code and libraries code, promises are used by standard modern Web APIs such as:
+In addition to your own code and library code, promises are used by standard modern Web APIs such as:
 
 - the Battery API
 - the [Fetch API](https://flaviocopes.com/fetch-api/)
@@ -138,7 +138,7 @@ and we simply log it to the console.
 
 ## Handling errors
 
-In the example, in the previous section, we had a `catch` that was appended to the chain of promises.
+In the above example, in the previous section, we had a `catch` that was appended to the chain of promises.
 
 When anything in the chain of promises fails and raises an error or rejects the promise, the control goes to the nearest `catch()` statement down the chain.
 
