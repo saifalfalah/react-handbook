@@ -3,7 +3,7 @@ title: 'The React Fragment'
 description: 'How to use React.Fragment to create invisible HTML tags'
 ---
 
-Notice how I wrapped the return values in a `div`. This is because a component can only return one single element, and if you want more than one, you need to wrap it into another container tag.
+Notice how I wrap return values in a `div`. This is because a component can only return one single element, and if you want more than one, you need to wrap it with another container tag.
 
 This however causes an unnecessary `div` in the output. You can avoid this by using `React.Fragment`:
 
