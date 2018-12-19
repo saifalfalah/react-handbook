@@ -3,7 +3,7 @@ title: 'Components'
 description: 'A brief introduction to React Components'
 ---
 
-A component is one isolated piece of interface. For example in a typical blog homepage you might find the Sidebar component, and the Blog Posts List component. They are in turn composed by components themselves, so you could have a list of Blog post components, each for every blog post, and each with its own peculiar properties.
+A component is one isolated piece of interface. For example in a typical blog homepage you might find the Sidebar component, and the Blog Posts List component. They are in turn composed of components themselves, so you could have a list of Blog post components, each for every blog post, and each with its own peculiar properties.
 
 ![A react component](1.png)
 
@@ -69,9 +69,9 @@ class BlogPostExcerpt extends Component {
 
 Up until recently, class components were the only way to define a component that had its own state, and could access the lifecycle methods so you could do things when the component was first rendered, updated or removed.
 
-React Hooks changed this, so our function components are now much more powerful than ever and I believe we'll see less and less class components in the future, although it will still be perfectly valid way to create components.
+React Hooks changed this, so our function components are now much more powerful than ever and I believe we'll see fewer and fewer class components in the future, although it will still be perfectly valid way to create components.
 
-There is a third syntax which uses the `ES5` syntax, without the classes:
+There is also a third syntax which uses the `ES5` syntax, without the classes:
 
 ```js
 import React from 'react'
