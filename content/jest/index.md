@@ -1,38 +1,9 @@
 ---
 title: Testing JavaScript with Jest
-date: 2018-05-17T07:07:09+02:00
 description: "Jest is a library for testing JavaScript code. It's an open source project maintained by Facebook, and it's especially well suited for React code testing, although not limited to that: it can test any JavaScript code. Jest is very fast and easy to use"
-booktitle: "Jest"
-bookdescription: " "
-tags: devtools
 ---
 
 ![Jest](banner.jpg)
-
-<!-- TOC -->
-
-- [Introduction to Jest](#introduction-to-jest)
-- [Installation](#installation)
-- [Create the first Jest test](#create-the-first-jest-test)
-- [Run Jest with VS Code](#run-jest-with-vs-code)
-- [Matchers](#matchers)
-- [Setup](#setup)
-- [Teardown](#teardown)
-- [Group tests using describe()](#group-tests-using-describe)
-- [Testing asynchronous code](#testing-asynchronous-code)
-  - [Callbacks](#callbacks)
-  - [Promises](#promises)
-  - [Async/await](#asyncawait)
-- [Mocking](#mocking)
-  - [Spy packages without affecting the functions code](#spy-packages-without-affecting-the-functions-code)
-  - [Mock an entire package](#mock-an-entire-package)
-  - [Mock a single function](#mock-a-single-function)
-  - [Pre-built mocks](#pre-built-mocks)
-- [Snapshot testing](#snapshot-testing)
-
-<!-- /TOC -->
-
-## Introduction to Jest
 
 Jest is a library for testing JavaScript code.
 
@@ -126,18 +97,18 @@ export default { sum, mul, sub, div }
 Now create a `math.test.js` file, in the same folder, and there we'll use Jest to test the functions defined in `math.js`:
 
 ```js
-const { sum, mul, sub, div } = require("./math")
+const { sum, mul, sub, div } = require('./math')
 
-test("Adding 1 + 1 equals 2", () => {
+test('Adding 1 + 1 equals 2', () => {
   expect(sum(1, 1)).toBe(2)
 })
-test("Multiplying 1 * 1 equals 1", () => {
+test('Multiplying 1 * 1 equals 1', () => {
   expect(mul(1, 1)).toBe(1)
 })
-test("Subtracting 1 - 1 equals 0", () => {
+test('Subtracting 1 - 1 equals 0', () => {
   expect(sub(1, 1)).toBe(0)
 })
-test("Dividing 1 / 1 equals 1", () => {
+test('Dividing 1 / 1 equals 1', () => {
   expect(div(1, 1)).toBe(1)
 })
 ```
@@ -148,7 +119,7 @@ Running `yarn test` results in Jest being run on all the test files it finds, an
 
 ## Run Jest with VS Code
 
-Visual Studio Code is a great editor for JavaScript development. The [Jest extension](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) offers a  top notch integration for our tests.
+Visual Studio Code is a great editor for JavaScript development. The [Jest extension](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) offers a top notch integration for our tests.
 
 Once you install it, it will automatically detect if you have installed Jest in your devDependencies and run the tests. You can also invoke the tests manually by selecting the **Jest: Start Runner** command. It will run the tests and stay in watch mode to re-run them whenever you change one of the files that have a test (or a test file):
 
@@ -159,7 +130,7 @@ Once you install it, it will automatically detect if you have installed Jest in 
 In the previous article I used `toBe()` as the only **matcher**:
 
 ```js
-test("Adding 1 + 1 equals 2", () => {
+test('Adding 1 + 1 equals 2', () => {
   expect(sum(1, 1)).toBe(2)
 })
 ```
@@ -185,12 +156,12 @@ Most commonly used matchers, comparing the value of the result of `expect()` wit
 - `toHaveLength(number)`: checks the length of an array
 - `toHaveProperty(key, value)`: checks if an object has a property, and optionally checks its value
 - `toThrow` checks if a function you pass throws an exception (in general) or a specific exception
-- `toBeInstanceOf()`:  checks if an object is an instance of a class
+- `toBeInstanceOf()`: checks if an object is an instance of a class
 
 All those matchers can be negated using `.not.` inside the statement, for example:
 
 ```js
-test("Adding 1 + 1 does not equal 3", () => {
+test('Adding 1 + 1 does not equal 3', () => {
   expect(sum(1, 1)).not.toBe(3)
 })
 ```
@@ -303,7 +274,7 @@ With functions that return promises, we simply **return a promise** from the tes
 
 ```js
 //uppercase.js
-const uppercase = (str) => {
+const uppercase = str => {
   return new Promise((resolve, reject) => {
     if (!str) {
       reject('Empty string')
@@ -329,7 +300,7 @@ Promises that are rejected can be tested using `.catch()`:
 
 ```js
 //uppercase.js
-const uppercase = (str) => {
+const uppercase = str => {
   return new Promise((resolve, reject) => {
     if (!str) {
       reject('Empty string')
@@ -473,9 +444,7 @@ import App from './App'
 import renderer from 'react-test-renderer'
 
 it('renders correctly', () => {
-  const tree = renderer
-    .create(<App />)
-    .toJSON()
+  const tree = renderer.create(<App />).toJSON()
   expect(tree).toMatchSnapshot()
 })
 ```
@@ -513,7 +482,7 @@ exports[`renders correctly 1`] = `
      and save to reload.
   </p>
 </div>
-`;
+`
 ```
 
 As you see it's the code that the App component renders, nothing more.
