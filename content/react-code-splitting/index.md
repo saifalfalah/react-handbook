@@ -19,7 +19,7 @@ React 16.6.0, released in October 2018, introduced a way of performing code spli
 
 Use **React.lazy** and **Suspense**.
 
-`React.lazy` and `Suspense` form the perfect way to lazily load a dependency and only show it when the needed.
+`React.lazy` and `Suspense` form the perfect way to lazily load a dependency and only show it when needed.
 
 Let's start with `React.lazy`. You use it to import any component:
 
@@ -57,7 +57,7 @@ export default () => {
 }
 ```
 
-It takes care of handling the output meanwhile the lazy loaded component is fetched and rendered.
+It takes care of handling the output while the lazy loaded component is fetched and rendered.
 
 Use its `fallback` prop to output some JSX or a component output:
 
