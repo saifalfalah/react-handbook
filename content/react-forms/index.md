@@ -162,6 +162,6 @@ class FileInput extends React.Component {
 }
 ```
 
-This is the **uncontrolled components** way. The state is stored in the DOM rather than in the component state (notice we used `this.curriculum` to access the uploaded file, and not touched the `state`.
+This is the **uncontrolled components** way. The state is stored in the DOM rather than in the component state (notice we used `this.curriculum` to access the uploaded file, and have not touched the `state`.
 
 I know what you're thinking - beyond those basics, there must be a library that simplifies all this form handling stuff and automates validation, error handling and more, right? There is a great one, Formik (Formik tutorial coming tomorrow!)
