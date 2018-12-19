@@ -5,7 +5,7 @@ description: 'Arrow Functions are one of the most impactful changes in ES6/ES201
 
 Arrow functions were introduced in ES6 / ECMAScript 2015, and since their introduction they changed forever how JavaScript code looks (and works).
 
-In my opinion this change was so welcoming that you now rarely see in modern codebases the usage of the `function` keyword.
+In my opinion this change was so welcoming that you now rarely see the usage of the `function` keyword in modern codebases.
 
 Visually, it’s a simple and welcome change, which allows you to write functions with a shorter syntax, from:
 
@@ -47,7 +47,7 @@ Thanks to this short syntax, arrow functions **encourage the use of small functi
 
 Arrow functions allow you to have an implicit return: values are returned without having to use the `return` keyword.
 
-It works when there is a on-line statement in the function body:
+It works when there is a one-line statement in the function body:
 
 ```js
 const myFunction = () => 'test'
@@ -55,7 +55,7 @@ const myFunction = () => 'test'
 myFunction() //'test'
 ```
 
-Another example, returning an object (remember to wrap the curly brackets in parentheses to avoid it being considered the wrapping function body brackets):
+Another example, when returning an object, remember to wrap the curly brackets in parentheses to avoid it being considered the wrapping function body brackets:
 
 ```js
 const myFunction = () => ({ value: 'test' })
@@ -97,7 +97,7 @@ const car = {
 
 Due to this, arrow functions are not suited as object methods.
 
-Arrow functions cannot be used as constructors as well, when instantiating an object will raise a `TypeError`.
+Arrow functions cannot be used as constructors either, when instantiating an object will raise a `TypeError`.
 
 This is where regular functions should be used instead, **when dynamic context is not needed**.
 
