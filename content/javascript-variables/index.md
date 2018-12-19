@@ -7,9 +7,9 @@ A variable is a literal assigned to an identifier, so you can reference and use 
 
 Variables in [JavaScript](https://flaviocopes.com/javascript/) do not have any type attached. Once you assign a specific literal type to a variable, you can later reassign the variable to host any other type, without type errors or any issue.
 
-This is why JavaScript is sometimes referenced as "untyped".
+This is why JavaScript is sometimes referred to as "untyped".
 
-A variable must be declared before you can use it. There are 3 ways to do it, using `var`, `let` or `const`, and those 3 ways differ in how you can interact with the variable later on.
+A variable must be declared before you can use it. There are 3 ways to do this, using `var`, `let` or `const`, and those 3 ways differ in how you can interact with the variable later on.
 
 ## Using `var`
 
@@ -47,7 +47,7 @@ The **scope** is the portion of code where the variable is visible.
 A variable initialized with `var` outside of any function is assigned to the global object, has a global scope and is visible everywhere.
 A variable initialized with `var` inside a function is assigned to that function, it's local and is visible only inside it, just like a function parameter.
 
-Any variable defined into a function with the same name of a global variable takes precedence over the global variable, shadowing it.
+Any variable defined in a function with the same name as a global variable takes precedence over the global variable, shadowing it.
 
 It's important to understand that a block (identified by a pair of curly braces) does not define a new scope. A new scope is only created when a function is created, because `var` does not have block scope, but function scope.
 
@@ -59,7 +59,7 @@ Inside a function, any variable defined in it is visible throughout all the func
 
 Modern JavaScript developers might choose to only use `let` and completely discard the use of `var`.
 
-> If `let` seems an obscure term, just read `let color = 'red'` as _let the color be red_ and all has much more sense
+> If `let` seems an obscure term, just read `let color = 'red'` as _let the color be red_ and it all makes much more sense
 
 Defining `let` outside of any function - contrary to `var` - does not create a global variable.
 
