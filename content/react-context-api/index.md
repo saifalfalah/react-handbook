@@ -3,11 +3,11 @@ title: 'The Context API'
 description: 'The Context API is a neat way to pass state across the app without having to use props'
 ---
 
-The **Context API** was introduced to allow you to pass state (and allow to update the state) across the app, without having to use props for it.
+The **Context API** was introduced to allow you to pass state (and enable the state to update) across the app, without having to use props for it.
 
 The React team suggests to stick to props if you have just a few levels of children to pass, because it's still a much less complicated API than the Context API.
 
-In many cases, it enables us to avoid using Redux, simplifying a lot our apps, and also learning how to use React.
+In many cases, it enables us to avoid using Redux, simplifying our apps a lot, and also learning how to use React.
 
 How does it work?
 
@@ -48,7 +48,7 @@ class HelloWorld extends React.Component {
 
 I used Container as the name of this component because this will be a global provider. You can also create smaller contexts.
 
-Inside a component that's wrapped in a Provider, you use a **Consumer** component can make use of the context:
+Inside a component that's wrapped in a Provider, you use a **Consumer** component to make use of the context:
 
 ```js
 class Button extends React.Component {
