@@ -13,7 +13,7 @@ The syntax at a first glance is very simple, just use backticks instead of singl
 const a_string = `something`
 ```
 
-They are unique because they provide a lot of features that normal strings built with quotes, in particular:
+They are unique because they provide a lot of features that normal strings built with quotes do not, in particular:
 
 - they offer a great syntax to define multiline strings
 - they provide an easy way to interpolate variables and expressions in strings
@@ -23,7 +23,7 @@ Let's dive into each of these in detail.
 
 ## Multiline strings
 
-Pre-ES6, to create a string spanned over two lines you had to use the `\` character at the end of a line:
+Pre-ES6, to create a string spanning over two lines you had to use the `\` character at the end of a line:
 
 ```js
 const string = 'first part \
@@ -103,7 +103,7 @@ const string2 = `something ${foo() ? 'x' : 'y' }`
 
 ## Template tags
 
-Tagged templates is one features that might sound less useful at first for you, but it's actually used by lots of popular libraries around, like [Styled Components](https://flaviocopes.com/styled-components/) or [Apollo](https://flaviocopes.com/apollo/), the [GraphQL](https://flaviocopes.com/graphql/) client/server lib, so it's essential to understand how it works.
+Tagged templates is one feature that might sound less useful at first for you, but it's actually used by lots of popular libraries around, like [Styled Components](https://flaviocopes.com/styled-components/) or [Apollo](https://flaviocopes.com/apollo/), the [GraphQL](https://flaviocopes.com/graphql/) client/server lib, so it's essential to understand how it works.
 
 In Styled Components template tags are used to define CSS strings:
 
@@ -145,7 +145,7 @@ If we take an example above:
 const string = `something ${1 + 2 + 3}`
 ```
 
-`literals` is an array with two items. The first is `something `, the string until the first interpolation, and the second is an empty string, the space betwene the end of the first interpolation (we only have one) and the end of the string.
+`literals` is an array with two items. The first is `something `, the string until the first interpolation, and the second is an empty string, the space between the end of the first interpolation (we only have one) and the end of the string.
 
 `expressions` in this case is an array with a single item, `6`.
 
