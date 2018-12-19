@@ -37,7 +37,7 @@ Passing props down to child components is a great way to pass values around in y
 
 It gets complicated when:
 
-- you need to access the state of a component from a child that's several levels down (all the previous children needs to act as a pass-through, even if they do not need to know the state, complicating things)
+- you need to access the state of a component from a child that's several levels down (all the previous children need to act as a pass-through, even if they do not need to know the state, complicating things)
 - you need to access the state of a component from a completely unrelated component.
 
 ## Default values for props
@@ -82,4 +82,4 @@ A special prop is `children`. That contains the value of anything that is passed
 
 In this case, inside `BlogPostExcerpt` we could access "Something" by looking up `this.props.children`.
 
-While Props allow a Component to receive properties from its parent, be "instructed" to print some data for example, state allows a component to take life on itself, and be independent of the surrounding environment.
+While Props allow a Component to receive properties from its parent, to be "instructed" to print some data for example, state allows a component to take on life itself, and be independent of the surrounding environment.
