@@ -7,7 +7,7 @@ Many existing frameworks, before React came on the scene, were directly manipula
 
 First, what is the DOM?
 
-The DOM (_Document Object Model_) is a Tree representation of the page, starting from the `<html>` tag, going down into every children, called nodes.
+The DOM (_Document Object Model_) is a Tree representation of the page, starting from the `<html>` tag, going down into every child, which are called nodes.
 
 It's kept in the browser memory, and directly linked to what you see in a page.
 The DOM has an API that you can use to traverse it, access every single node, filter them, modify them.
@@ -34,7 +34,7 @@ React keeps a copy of the DOM representation, for what concerns the React render
 
 ### The Virtual DOM Explained
 
-Every time the DOM changes, the browser has to do two intensive operations: repaint (visual or content changes to an element that do not affects the layout and positioning relatively to other elements) and reflow (recalculate the layout of a portion of the page - or the whole page layout).
+Every time the DOM changes, the browser has to do two intensive operations: repaint (visual or content changes to an element that do not affect the layout and positioning relative to other elements) and reflow (recalculate the layout of a portion of the page - or the whole page layout).
 
 React uses a Virtual DOM to help the browser use less resources when changes need to be done on a page.
 
@@ -43,7 +43,7 @@ When you call `setState()` on a Component, specifying a state different than the
 What happens next is:
 
 - React updates the Virtual DOM relative to the components marked as dirty (with some additional checks, like triggering `shouldComponentUpdate()`)
-- Runs the diffing algorithm to reconciliate the changes
+- Runs the diffing algorithm to reconcile the changes
 - Updates the real DOM
 
 ### Why is the Virtual DOM helpful: batching
