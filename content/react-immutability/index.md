@@ -5,11 +5,11 @@ description: 'What is immutability? And how does it fit in the React world?'
 
 One concept you will likely meet when programming in React is immutability (and its opposite, mutability).
 
-It's a controversial topic, but in any way you might think about the concept of immutability, React and most of its ecosystem kind of forces this, so you need to at least have a grasp of why it's so important and the implications of it.
+It's a controversial topic, but whatever you might think about the concept of immutability, React and most of its ecosystem kind of forces this, so you need to at least have a grasp of why it's so important and the implications of it.
 
 In programming, a variable is immutable when its value cannot change after it's created.
 
-You are already using immutable variables without knowing when you manipulate a string. Strings are immutable by default, when you change them in reality you create a new string and assign it to the same variable name.
+You are already using immutable variables without knowing it when you manipulate a string. Strings are immutable by default, when you change them in reality you create a new string and assign it to the same variable name.
 
 An immutable variable can never be changed. To update its value, you create a new variable.
 
