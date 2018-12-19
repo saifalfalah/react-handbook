@@ -70,15 +70,15 @@ The reason is that using this method, React knows that the state has changed. It
 
 ### Unidirectional Data Flow
 
-A state is always owned by one Component. Any data that's affected by this state can only affects Components below it: its children.
+A state is always owned by one Component. Any data that's affected by this state can only affect Components below it: its children.
 
-Changing a state on a Component will never affects its parent, or its siblings, or any other Component in the application: just its children.
+Changing the state on a Component will never affect its parent, or its siblings, or any other Component in the application: just its children.
 
-This is the reason many times the state is moved up in the Components tree.
+This is the reason the state is often moved up in the Component tree.
 
 ### Moving the State Up in the Tree
 
-Because of the Unidirectional Data Flow rules, if two components need to share a state, the state needs to be moved up to a common ancestor.
+Because of the Unidirectional Data Flow rule, if two components need to share state, the state needs to be moved up to a common ancestor.
 
 Many times the closest ancestor is the best place to manage the state, but it's not a mandatory rule.
 
