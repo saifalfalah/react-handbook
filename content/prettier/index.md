@@ -35,7 +35,7 @@ The most important links you need to know more about Prettier are
 
 I learned Go recently and one of the best things about Go is **gofmt**, an official tool that automatically formats your code according to common standards.
 
-95% (made up stat) of the Go code around looks exactly the same, because this tool can be easily enforced and since the style is defined on you by the Go maintainers, you are much more likely to adapt to that standard instead of insisting on your own style. Like tabs vs spaces, or where to put an opening bracket.
+95% (made up stat) of the Go code around looks exactly the same, because this tool can be easily enforced and since the style is defined for you by the Go maintainers, you are much more likely to adapt to that standard instead of insisting on your own style. Like tabs vs spaces, or where to put an opening bracket.
 
 This might sound like a limitation, but it's actually very powerful. All Go code looks the same.
 
@@ -49,7 +49,7 @@ It has very few options, and **most of the decisions are already taken for you**
 
 It is an invaluable tool and it can be used alongside Prettier.
 
-ESLint also highlights formatting issues, but since it's a lot configurable, everyone could have a different set of formatting rules. Prettier provides a common ground for all.
+ESLint also highlights formatting issues, but since it's a lot more configurable, everyone could have a different set of formatting rules. Prettier provides a common ground for all.
 
 Now, there are a few things you can customize, like:
 
@@ -76,6 +76,6 @@ If you think Prettier is just for teams, or for pro users, you are missing a goo
 
 A good style enforces good habits.
 
-Formatting is a topic that's mostly overlooked by beginners, but having a clean and consistent formatting is key to your success as a new developer.
+Formatting is a topic that's mostly overlooked by beginners, but having clean and consistent formatting is key to your success as a new developer.
 
 Also, even if you started using [JavaScript](https://flaviocopes.com/javascript/) 2 weeks ago, with Prettier your code - style wise - will look just like code written from a JavaScript Guru writing JS since 1998.
