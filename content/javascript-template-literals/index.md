@@ -1,6 +1,6 @@
 ---
 title: Template Literals
-description: "Introduced in ES2015, aka ES6, Template Literals offer a new way to declare strings, but also some new interesting constructs which are already widely popular."
+description: 'Introduced in ES2015, aka ES6, Template Literals offer a new way to declare strings, but also some new interesting constructs which are already widely popular.'
 ---
 
 ## Introduction to Template Literals
@@ -17,7 +17,7 @@ They are unique because they provide a lot of features that normal strings built
 
 - they offer a great syntax to define multiline strings
 - they provide an easy way to interpolate variables and expressions in strings
-- they allow you to create DSLs with template tags
+- they allow you to create DSLs with template tags (DSL means domain specific language, and it's for example used in React by Styled Components, to define CSS for a component)
 
 Let's dive into each of these in detail.
 
@@ -26,7 +26,8 @@ Let's dive into each of these in detail.
 Pre-ES6, to create a string spanning over two lines you had to use the `\` character at the end of a line:
 
 ```js
-const string = 'first part \
+const string =
+  'first part \
 second part'
 ```
 
@@ -37,15 +38,15 @@ This allows to create a string on 2 lines, but it's rendered on just one line:
 To render the string on multiple lines as well, you explicitly need to add `\n` at the end of each line, like this:
 
 ```js
-const string = 'first line\n \
+const string =
+  'first line\n \
 second line'
 ```
 
 or
 
 ```js
-const string = 'first line\n' +
-               'second line'
+const string = 'first line\n' + 'second line'
 ```
 
 Template literals make multiline strings much simpler.
@@ -61,7 +62,6 @@ is awesome!`
 ```
 
 Keep in mind that space is meaningful, so doing this:
-
 
 ```js
 const string = `First
@@ -98,7 +98,7 @@ inside the `${}` you can add anything, even expressions:
 
 ```js
 const string = `something ${1 + 2 + 3}`
-const string2 = `something ${foo() ? 'x' : 'y' }`
+const string2 = `something ${foo() ? 'x' : 'y'}`
 ```
 
 ## Template tags
@@ -112,7 +112,7 @@ const Button = styled.button`
   font-size: 1.5em;
   background-color: black;
   color: white;
-`;
+`
 ```
 
 In Apollo template tags are used to define a GraphQL query schema:
@@ -128,9 +128,7 @@ const query = gql`
 The `styled.button` and `gql` template tags highlighted in those examples are just **functions**:
 
 ```js
-function gql(literals, ...expressions) {
-
-}
+function gql(literals, ...expressions) {}
 ```
 
 this function returns a string, which can be the result of _any_ kind of computation.
@@ -145,7 +143,7 @@ If we take an example above:
 const string = `something ${1 + 2 + 3}`
 ```
 
-`literals` is an array with two items. The first is `something `, the string until the first interpolation, and the second is an empty string, the space between the end of the first interpolation (we only have one) and the end of the string.
+`literals` is an array with two items. The first is `something`, the string until the first interpolation, and the second is an empty string, the space between the end of the first interpolation (we only have one) and the end of the string.
 
 `expressions` in this case is an array with a single item, `6`.
 
@@ -161,21 +159,21 @@ test`
 in this case `literals` is an array where the first item is:
 
 ```js
-`something
+;`something
 another `
 ```
 
 the second is:
 
 ```js
-`
+;`
 new line `
 ```
 
 and the third is:
 
 ```js
-`
+;`
 test`
 ```
 
@@ -201,4 +199,3 @@ function interpolate(literals, ...expressions) {
   return string
 }
 ```
-
