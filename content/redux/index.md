@@ -9,7 +9,7 @@ Redux is a state manager that's usually used along with React, but it's not tied
 
 React has its own way to manage state, as you can read on the [React Beginner's Guide](https://flaviocopes.com/react/), where I introduce how you can manage State in React.
 
-Moving the state up in the tree works in simple cases, but in a complex app you might find you moving almost all the state up, and then down using props.
+Moving the state up in the tree works in simple cases, but in a complex app you might find you are moving almost all the state up, and then down using props.
 
 React in version 16.3.0 introduced the [**Context API**](https://flaviocopes.com/react/#the-context-api), which makes Redux redundant for the use case of accessing the state from different parts of your app, so consider using the Context API instead of Redux, unless you need a specific feature that Redux provides.
 
@@ -35,7 +35,7 @@ It can only be changed by dispatching an **Action**.
 
 ## Actions
 
-An **Action** is **a JavaScript object that describes a change in a minimal way** (just with the information needed):
+An **Action** is **a JavaScript object that describes a change in a minimal way** (with just the information needed):
 
 ```js
 {
@@ -108,7 +108,7 @@ A **reducer** is a **pure function** that calculates the next State Tree based o
 ;(currentState, action) => newState
 ```
 
-A pure function takes an input and returns an output without changing the input nor anything else. Thus, a reducer returns a completely new state tree object that substitutes the previous one.
+A pure function takes an input and returns an output without changing the input or anything else. Thus, a reducer returns a completely new state tree object that substitutes the previous one.
 
 ### What a reducer should not do
 
@@ -192,8 +192,8 @@ The **Store** is an object that:
 
 - **holds the state** of the app
 - **exposes the state** via `getState()`
-- allows to **update the state** via `dispatch()`
-- allows to (un)register as a **state change listener** using `subscribe()`
+- allows us to **update the state** via `dispatch()`
+- allows us to (un)register a **state change listener** using `subscribe()`
 
 A store is **unique** in the app.
 
