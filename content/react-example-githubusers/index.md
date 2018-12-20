@@ -65,7 +65,7 @@ const App = () => {
 }
 ```
 
-Cool! We must have a way now to ask to GitHub the details of a single username. We'll do so using a `Form` component, where we manage our own state (`username`), and we ask GitHub the information about a user using their public APIs, via [Axios](https://flaviocopes.com/axios/):
+Cool! We must have a way now to ask GitHub for the details of a single username. We'll do so using a `Form` component, where we manage our own state (`username`), and we ask GitHub for information about a user using their public APIs, via [Axios](https://flaviocopes.com/axios/):
 
 ```js
 const Form = props => {
