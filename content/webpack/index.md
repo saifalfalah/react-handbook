@@ -24,7 +24,7 @@ It can perform many operations:
 - can split the output files into multiple files, to avoid having a huge js file to load in the first page hit.
 - can perform [tree shaking](https://flaviocopes.com/javascript-glossary/#tree-shaking).
 
-Webpack is not limited to be used on the frontend, but it's also useful in backend Node.js development as well.
+Webpack is not limited to be use on the frontend, it's also useful in backend Node.js development as well.
 
 Predecessors of webpack, and still widely used tools, include:
 
@@ -34,7 +34,7 @@ Predecessors of webpack, and still widely used tools, include:
 
 There are lots of similarities in what those and Webpack can do, but the main difference is that those are known as **task runners**, while webpack was born as a module bundler.
 
-It's a more focused tool: you specify an entry point to your app (it could even be an HTML file with script tags) and webpack analyzes the files and bundles in a single JavaScript output file all you need to run the app.
+It's a more focused tool: you specify an entry point to your app (it could even be an HTML file with script tags) and webpack analyzes the files and bundles all you need to run the app in a single JavaScript output file.
 
 ## Installing webpack
 
@@ -64,7 +64,7 @@ webpack-cli
 
 ### Local install
 
-Webpack can be installed locally as well. It's the recommended setup, because webpack can be updated per-project, and you have less resistance in using the latest features just for a small project rather than updating all the projects you have the use webpack.
+Webpack can be installed locally as well. It's the recommended setup, because webpack can be updated per-project, and you have less resistance to using the latest features just for a small project rather than updating all the projects you have that use webpack.
 
 With [Yarn](https://flaviocopes.com/yarn/):
 
@@ -161,7 +161,7 @@ module.exports = {
 }
 ```
 
-The [regular expression](https://flaviocopes.com/javascript-regular-expressions/) target any CSS file.
+The [regular expression](https://flaviocopes.com/javascript-regular-expressions/) targets any CSS file.
 
 A loader can have options:
 
@@ -186,7 +186,7 @@ module.exports = {
   /*...*/
 }
 ```
-You can require multiple loaders per each rule:
+You can require multiple loaders for each rule:
 
 ```js
 module.exports = {
@@ -278,11 +278,11 @@ module.exports = {
 }
 ```
 
-The `HTMLWebpackPlugin` plugin has the job of automatically creating an HTML file, add the output JS bundle path, so the JavaScript is ready to be served.
+The `HTMLWebpackPlugin` plugin has the job of automatically creating an HTML file, adding the output JS bundle path, so the JavaScript is ready to be served.
 
 There are [lots of plugins available](https://webpack.js.org/plugins/).
 
-One useful plugin, `CleanWebpackPlugin`, can be used to clear the `dist/` folder before creating any output, so you don't leave around files when you change the names of the output file:
+One useful plugin, `CleanWebpackPlugin`, can be used to clear the `dist/` folder before creating any output, so you don't leave files around when you change the name of the output file:
 
 ```js
 module.exports = {
@@ -297,7 +297,7 @@ module.exports = {
 
 ## The webpack mode
 
-The mode (introduced in webpack 4) sets the environment on which webpack works. It can be set to `development` or `production` (defaults to production, so you only set it when moving to development)
+This mode (introduced in webpack 4) sets the environment on which webpack works. It can be set to `development` or `production` (defaults to production, so you only set it when moving to development)
 
 ```js
 module.exports = {
@@ -391,11 +391,11 @@ or simply
 yarn watch
 ```
 
-One nice feature of the watch mode is that the bundle is only changed if the building has no errors. If there are errors, `watch` will keep listening for changes, and try to rebuild the bundle, but the current, working bundle is not affected by those problematic builds.
+One nice feature of the watch mode is that the bundle is only changed if the build has no errors. If there are errors, `watch` will keep listening for changes, and try to rebuild the bundle, but the current, working bundle is not affected by those problematic builds.
 
 ## Handling images
 
-Webpack allows to use images in a very convenient way, using the [`file-loader`](https://webpack.js.org/loaders/file-loader/) loader.
+Webpack allows us to use images in a very convenient way, using the [`file-loader`](https://webpack.js.org/loaders/file-loader/) loader.
 
 This simple configuration:
 
