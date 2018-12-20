@@ -79,7 +79,7 @@ Add to your `package.json` this line:
 
 and run your tests by executing `yarn test` in your shell.
 
-Now, you don't have any test here, so nothing is going to be executed:
+Now, you don't have any tests here, so nothing is going to be executed:
 
 ![Testing with Yarn](testing-with-yarn.png)
 
@@ -140,11 +140,11 @@ A matcher is a method that lets you test values.
 Most commonly used matchers, comparing the value of the result of `expect()` with the value passed in as argument, are:
 
 - `toBe` compares strict equality, using `===`
-- `toEqual` compares the values of two variables. If it's an object or array, checks equality of all the properties or elements
+- `toEqual` compares the values of two variables. If it's an object or array, it checks the equality of all the properties or elements
 - `toBeNull` is true when passing a null value
-- `toBeDefined` is true when passing a defined value (opposite as above)
+- `toBeDefined` is true when passing a defined value (opposite to the above)
 - `toBeUndefined` is true when passing an undefined value
-- `toBeCloseTo` is used to compare floating values, avoid rounding errors
+- `toBeCloseTo` is used to compare floating values, avoiding rounding errors
 - `toBeTruthy` true if the value is considered true (like an `if` does)
 - `toBeFalsy` true if the value is considered false (like an `if` does)
 - `toBeGreaterThan` true if the result of expect() is higher than the argument
@@ -196,7 +196,7 @@ beforeEach(() => {
 
 ## Teardown
 
-Just as you could do with the setup, you can perform something after each test runs:
+Just as you can do with setup, you can also perform something after each test runs:
 
 ```js
 afterEach(() => {
@@ -326,7 +326,7 @@ test(`uppercase 'test' to equal 'TEST'`, () => {
 
 ### Async/await
 
-To test functions that return promises we can also use async/await, which make the syntax very straightforward and simple:
+To test functions that return promises we can also use async/await, which makes the syntax very straightforward and simple:
 
 ```js
 //uppercase.test.js
@@ -351,7 +351,7 @@ In testing, **mocking** allows you to test functionality that depends on:
 so that:
 
 1. your tests run **faster**, giving a quick turnaround time during development
-2. your tests are **independent** of network conditions, the state of the database
+2. your tests are **independent** of network conditions, or the state of the database
 3. your tests do not **pollute** any data storage because they do not touch the database
 4. any change done in a test does not change the state for subsequent tests, and re-running the test suite should start from a known and reproducible starting point
 5. you don't have to worry about rate limiting on API calls and network requests
