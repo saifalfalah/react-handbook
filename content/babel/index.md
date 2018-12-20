@@ -3,7 +3,7 @@ title: "A short and simple guide to Babel"
 description: "Babel is an awesome entry in the Web Developer toolset. It's an awesome tool, and it’s been around for quite some time, but nowadays almost every JavaScript developer relies on it, and this will continue going on, because Babel is now indispensable and has solved a big problem for everyone."
 ---
 
-Babel is an awesome tool, and it’s been around for quite some time, but nowadays almost every [JavaScript](https://flaviocopes.com/javascript/) developer relies on it, and this will continue going on, because Babel is now indispensable and has solved a big problem for everyone.
+Babel is an awesome tool, and it’s been around for quite some time, but nowadays almost every [JavaScript](https://flaviocopes.com/javascript/) developer relies on it, and this will continue, because Babel is now indispensable and has solved a big problem for everyone.
 
 Which problem?
 
@@ -17,7 +17,7 @@ For example, ES6 introduced the **arrow function**:
 
 Which is now supported by all modern browsers. IE11 does not support it, nor Opera Mini (How do I know? By checking the [ES6 Compatibility Table](http://kangax.github.io/compat-table/es6/#test-arrow_functions)).
 
-So how should you deal with this problem? Should you move on and leave the customers with older/incompatible browsers behind, or should you write older JavaScript code to make all your users happy?
+So how should you deal with this problem? Should you move on and leave those customers with older/incompatible browsers behind, or should you write older JavaScript code to make all your users happy?
 
 Enter Babel. Babel is a **compiler**: it takes code written in one standard, and it transpiles it to code written into another standard.
 
@@ -41,7 +41,7 @@ Babel is easily installed using [npm](https://flaviocopes.com/npm/), locally in 
 npm install --save-dev @babel/core @babel/cli
 ```
 
-> In the past I recommended installing `babel-cli` globally, but this is now discouraged by the Babel maintainers, because by using it locally you can have different versions of Babel in each project, and also checking in babel in your repository is better for team play
+> In the past I recommended installing `babel-cli` globally, but this is now discouraged by the Babel maintainers, because by using it locally you can have different versions of Babel in each project, and also checking in babel in your repository is better for team work
 
 Since npm now comes with [`npx`](https://flaviocopes.com/node/npx/), locally installed CLI packages can run by typing the command in the project folder:
 
@@ -121,7 +121,7 @@ var bob = {
 console.log(bob.printFriends());
 ```
 
-As you can see arrow functions have all been converted to JavaScript ES5 `function`s.
+As you can see arrow functions have all been converted to JavaScript ES5 functions.
 
 ## Babel presets
 
@@ -153,7 +153,7 @@ E.g. "support the last 2 versions of every browser, but for Safari let's support
 }
 ```
 
-or "I don't need browsers support, just let me work with [Node.js](https://flaviocopes.com/node/) 6.10"
+or "I don't need browser support, just let me work with [Node.js](https://flaviocopes.com/node/) 6.10"
 
 ```js
 {
@@ -169,7 +169,7 @@ or "I don't need browsers support, just let me work with [Node.js](https://flavi
 
 ### `react` preset
 
-The `react` preset is very convenient when writing React apps, by adding `preset-flow`, `syntax-jsx`, `transform-react-jsx`, `transform-react-display-name`.
+The `react` preset is very convenient when writing React apps: adding `preset-flow`, `syntax-jsx`, `transform-react-jsx`, `transform-react-display-name`.
 
 By including it, you are all ready to go developing React apps, with JSX transforms and Flow support.
 
