@@ -58,7 +58,7 @@ Styles have the benefit of being local to the component, and they cannot leak to
 
 **CSS Modules** seem to be a perfect spot in the middle: you use classes, but CSS is scoped to the component, which means that any styling you add cannot be applied to other components without your permission. And yet your styles are defined in a separate CSS file, which is easier to maintain than CSS in JavaScript (and you can use your good old CSS property names).
 
-Start by creating a CSS file that ends with `.module.css`, for example `Button.module.css`. A great choice is to name it as the component you are going to style
+Start by creating a CSS file that ends with `.module.css`, for example `Button.module.css`. A great choice is to give it the same name as the component you are going to style
 
 Add your CSS here, then import it inside the component file you want to style:
 
