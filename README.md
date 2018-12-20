@@ -71,7 +71,8 @@ You can directly edit any chapter by opening it and clicking the "Edit" button i
   - [Webpack](content/webpack/index.md)
   - [Prettier](content/prettier/index.md)
 - Testing
-  - [Jest](content/jest/index.md)
+  - [Introduction to Jest](content/jest/index.md)
+  - [Testing React Components](content/react-testing-components/index.md)
 - A look at the React Ecosystem
   - [React Router](content/react-router/index.md)
   - [Redux](content/redux/index.md)
