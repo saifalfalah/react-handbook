@@ -5,7 +5,7 @@ description: "Introduced in ES2015, aka ES6, Template Literals offer a new way t
 
 ## Introduction to Template Literals
 
-Template Literals are a new ES2015 / ES6 feature that allow you to work with strings in a novel way compared to ES5 and below.
+Template Literals are a new ES2015 / ES6 feature that allows you to work with strings in a novel way compared to ES5 and below.
 
 The syntax at a first glance is very simple, just use backticks instead of single or double quotes:
 
@@ -17,7 +17,7 @@ They are unique because they provide a lot of features that normal strings built
 
 - they offer a great syntax to define multiline strings
 - they provide an easy way to interpolate variables and expressions in strings
-- they allow to create DSLs with template tags
+- they allow you to create DSLs with template tags
 
 Let's dive into each of these in detail.
 
