@@ -9,7 +9,7 @@ Gatsby is a platform for building apps and websites using React.
 
 It is one of the tools that allow you to build on a set of technologies and practices collectively known as [JAMstack](https://flaviocopes.com/jamstack/).
 
-Gatsby is one of the cool kids in the Frontend Development space right now. Why? I think the reasons are this:
+Gatsby is one of the cool kids in the Frontend Development space right now. Why? I think the reasons are:
 
 - the explosion of the JAMstack approach to building Web Apps and Web Sites
 - the rapid adoption of the [Progressive Web Apps](https://flaviocopes.com/progressive-web-apps/) technology in the industry, which is one of the key features of Gatsby
@@ -19,7 +19,7 @@ Gatsby is one of the cool kids in the Frontend Development space right now. Why?
 - the documentation is great
 - the network effect (people use it, create sites, make tutorials, people know more about it, creating a cycle)
 - everything is JavaScript (no need to learn a new templating language)
-- it hides the complexity, in the beginning, but allows to step into every step to customize
+- it hides the complexity, in the beginning, but allows us access into every step to customize
 
 All those are great points, and Gatsby is definitely worth a look.
 
@@ -89,7 +89,7 @@ If you open the site you created with your favorite code editor (I use [VS Code]
 
 ![](4.png)
 
-Now, making a simple change to the default page is easy, just open the `src/pages/index.js` and change "Hello world!" to something else, and save. The browser should instantly **hot reload** the component (which means the page does not actually refresh, but the content changes - a trick made possible by the underlying technology).
+Now, making a simple change to the default page is easy, just open `src/pages/index.js` and change "Hello world!" to something else, and save. The browser should instantly **hot reload** the component (which means the page does not actually refresh, but the content changes - a trick made possible by the underlying technology).
 
 To add a second page, just create another .js file in this folder, with the same content of `index.js` (tweak the content) and save it.
 
@@ -149,7 +149,7 @@ There are 3 kind of plugins:
 Some commonly used plugins are:
 
 - [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/) which allows to edit the `head` tag content
-- [gatsby-plugin-catch-links](https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/) which uses the [History API](https://flaviocopes.com/history-api/) to prevent the browser to reload the page when a link is clicked, loading the new content using AJAX instead
+- [gatsby-plugin-catch-links](https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/) which uses the [History API](https://flaviocopes.com/history-api/) to prevent the browser reloading the page when a link is clicked, loading the new content using AJAX instead
 
 A Gatsby plugin is installed in 2 steps. First you install it using `npm`, then you add it to the Gatsby configuration in `gatsby-config.js`.
 
@@ -177,7 +177,7 @@ Once you are done tweaking the site and you want to generate the production stat
 gatsby build
 ```
 
-At this point you can check that all works like you expect by starting a local Web Server using
+At this point you can check that it all works as you expect by starting a local Web Server using
 
 ```sh
 gatsby serve
