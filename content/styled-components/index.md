@@ -7,11 +7,11 @@ description: "Styled Components are one of the new ways to use CSS in modern Jav
 
 Once upon a time, the Web was really simple and CSS didn't even exist. We laid out pages using **tables** and frames. Good times.
 
-Then **CSS** came to life, and after some time it became clear that frameworks could greatly help especially in building grids and layouts, Bootstrap and Foundation playing a big part of this.
+Then **CSS** came to life, and after some time it became clear that frameworks could greatly help especially in building grids and layouts, Bootstrap and Foundation playing a big part in this.
 
-Preprocessors like **SASS** and others helped a lot to slow down the frameworks adoption, and to better organize the code conventions like **BEM** and **SMACSS** grew in their usage, especially within teams.
+Preprocessors like **SASS** and others helped a lot to slow down the adoption of frameworks, and to better organize the code, conventions like **BEM** and **SMACSS** grew in use, especially within teams.
 
-Conventions are not a solution to everything, and they are complex to remember, so in the last few years with the increasing adoption of [JavaScript](https://flaviocopes.com/javascript/) and build processes in every frontend project, CSS got its way into JavaScript (**CSS-in-JS**).
+Conventions are not a solution to everything, and they are complex to remember, so in the last few years with the increasing adoption of [JavaScript](https://flaviocopes.com/javascript/) and build processes in every frontend project, CSS found its way into JavaScript (**CSS-in-JS**).
 
 New tools explored new ways of doing CSS-in-JS and a few succeeded with increasing popularity:
 
@@ -25,11 +25,11 @@ and more.
 
 One of the most popular of these tools is **Styled Components**.
 
-It is the meant to be a successor of **CSS Modules**, a way to write CSS that's scoped to a single component, and not leak to any other element in the page.
+It is the meant to be a successor to **CSS Modules**, a way to write CSS that's scoped to a single component, and not leak to any other element in the page.
 
 (more on CSS modules [here](https://css-tricks.com/css-modules-part-1-need/) and [here](https://glenmaddern.com/articles/css-modules))
 
-Styled Components allow you to write plain CSS in your components without worrying about class names collisions.
+Styled Components allow you to write plain CSS in your components without worrying about class name collisions.
 
 ## Installation
 
@@ -137,7 +137,7 @@ render(
 
 In Styled Components, you can use the CSS you already know and love. It's just plain CSS. It is not pseudo CSS nor inline CSS with its limitations.
 
-You can use media queries, [nesting](https://tabatkins.github.io/specs/css-nesting/) and everything you might come up with.
+You can use media queries, [nesting](https://tabatkins.github.io/specs/css-nesting/) and anything else you might need.
 
 ## Using Vendor Prefixes
 
@@ -145,4 +145,4 @@ Styled Components automatically add all the vendor prefixes needed, so you don't
 
 ## Conclusion
 
-That's it for this Styled Components introduction! These concepts will help you get an understanding on the concept and help you get up and running with this way of using CSS in JavaScript.
+That's it for this Styled Components introduction! These concepts will help you get an understanding of the concept and help you get up and running with this way of using CSS in JavaScript.
