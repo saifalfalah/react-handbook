@@ -15,11 +15,9 @@ This improves:
 - the impact on memory, and so battery usage on mobile devices
 - the downloaded KiloBytes (or MegaBytes) size
 
-React 16.6.0, released in October 2018, introduced a way of performing code splitting what should take the place of every previously used tool or library.
+React 16.6.0, released in October 2018, introduced a way of performing code splitting that should take the place of every previously used tool or library: **React.lazy** and **Suspense**.
 
-Use **React.lazy** and **Suspense**.
-
-`React.lazy` and `Suspense` form the perfect way to lazily load a dependency and only show it when needed.
+`React.lazy` and `Suspense` form the perfect way to lazily load a dependency and only load it when needed.
 
 Let's start with `React.lazy`. You use it to import any component:
 
