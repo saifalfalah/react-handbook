@@ -30,7 +30,7 @@ To understand how SSR works, let's start from the basics to implement a proof of
 
 To implement basic SSR we're going to use Express.
 
-> If you are new to Express, or need some catch-up, check out my free Express Handbook here: <https://flaviocopes.com/express-handbook/>.
+> If you are new to Express, or need some catch-up, check out my free Express Handbook here: <https://flaviocopes.com/page/ebooks/>.
 
 Warning: the complexity of SSR can grow with the complexity of your application. This is the bare minimum setup to render a basic React app. For more complex needs you might need to do a bit more work or also check out SSR libraries for React.
 
