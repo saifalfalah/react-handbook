@@ -5,9 +5,9 @@ description: 'In 2015 the ECMAScript 6 (ES6) standard introduced classes. Learn 
 
 In 2015 the ECMAScript 6 (ES6) standard introduced classes.
 
-Before that, JavaScript only had a quite unique way to implement inheritance. Its [prototypal inheritance](https://flaviocopes.com/javascript-prototypal-inheritance/), while in my opinion great, was different from any other popular programming language.
+JavaScript has a quite uncommon way to implement inheritance: prototypical inheritance. [Prototypal inheritance](https://flaviocopes.com/javascript-prototypal-inheritance/), while in my opinion great, is unlike most other popular programming language's implementation of inheritance,  which is class-based.
 
-People coming from Java or Python or other languages had a hard time understanding the intricacies of prototypal inheritance, so the ECMAScript committee decided to introduce a syntactic sugar on top of them, and resemble how classes-based inheritance works in other popular implementations.
+People coming from Java or Python or other languages had a hard time understanding the intricacies of prototypal inheritance, so the ECMAScript committee decided to sprinkle syntactic sugar on top of prototypical inheritance so that it resembles how class-based inheritance works in other popular implementations.
 
 This is important: JavaScript under the hood is still the same, and you can access an object prototype in the usual way.
 
